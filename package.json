@@ -1,0 +1,34 @@
+{
+  "name": "sage",
+  "private": true,
+  "browserslist": [
+    "extends @roots/browserslist-config"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "bud dev",
+    "build": "bud build",
+    "translate": "yarn translate:pot && yarn translate:update",
+    "translate:pot": "wp i18n make-pot . ./resources/lang/sage.pot --include=\"app,resources\"",
+    "translate:update": "wp i18n update-po ./resources/lang/sage.pot ./resources/lang/*.po",
+    "translate:compile": "yarn translate:mo && yarn translate:js",
+    "translate:js": "wp i18n make-json ./resources/lang --pretty-print",
+    "translate:mo": "wp i18n make-mo ./resources/lang ./resources/lang"
+  },
+  "devDependencies": {
+    "@roots/bud": "6.16.1",
+    "@roots/bud-tailwindcss": "6.16.1",
+    "@roots/sage": "6.16.1",
+    "@wordpress/block-editor": "^12.16.0",
+    "@wordpress/components": "^25.14.0",
+    "backstopjs": "^6.2.2"
+  },
+  "dependencies": {
+    "@wordpress/i18n": "^4.48.0",
+    "caniuse-lite": "^1.0.30001561",
+    "micromodal": "^0.4.10"
+  }
+}

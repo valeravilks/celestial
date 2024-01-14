@@ -1,0 +1,31 @@
+name: my-first-wordpress-app
+recipe: wordpress
+config:
+  webroot: wordpress
+  php: '8.1'
+services:
+  appserver:
+    overrides:
+      volumes:
+#        // TODO: Add each file and folder need for project
+        - "./:/app/wordpress/wp-content/themes/sage"
+        - "/app/wordpress/wp-content/themes/sage/wordpress/"
+events:
+  post-start:
+    appserver: |
+      composer install
+      wp core download --version=6.4 --path=wordpress
+      wp config create --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --dbhost=database --path=wordpress
+      if ! wp core is-installed; then
+        wp core install \
+          --url=https://my-first-wordpress-app.lndo.site/ \
+          --title="My First Wordpress App" \
+          --admin_user=admin \
+          --admin_password=password \
+          --admin_email=admin@my-first-wordpress-app.lndo.site \
+          --path=wordpress
+      fi
+tooling:
+  acorn:
+    service: appserver
+    cmd: wp --path=/app/wordpress acorn

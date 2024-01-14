@@ -1,0 +1,14 @@
+/node_modules
+/vendor
+/public
+.env
+.budfiles
+npm-debug.log
+yarn-error.log
+/.idea
+/wordpress
+/.phpdoc
+/backstop_data
+/.phpunit.result.cache
+/.phpunit.cache
+/phpunit.xml.bak
