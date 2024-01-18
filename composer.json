@@ -42,6 +42,7 @@
     "php": "^8.0",
     "log1x/acf-composer": "^2.1",
     "log1x/poet": "^2.0",
+    "oscarotero/env": "^2.1",
     "roots/acorn": "^3.2",
     "roots/wp-config": "1.0.0"
   },
