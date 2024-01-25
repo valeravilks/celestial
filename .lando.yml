@@ -2,7 +2,7 @@ name: my-first-wordpress-app
 recipe: wordpress
 config:
   webroot: wordpress
-  php: '8.1'
+  php: '8.2'
 services:
   appserver:
     overrides:
