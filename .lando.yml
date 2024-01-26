@@ -16,7 +16,7 @@ events:
   post-start:
     appserver: |
       composer install
-      if ! wp core is-installed; then
+      if ! wp core is-installed --path=wordpress; then
         wp config create --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --dbhost=database --path=wordpress
         wp core install \
           --url=https://${PROJECT_NAME}.lndo.site/ \
