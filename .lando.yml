@@ -1,29 +1,31 @@
-name: my-first-wordpress-app
+name: celestial
 recipe: wordpress
 config:
   webroot: wordpress
   php: '8.2'
+env_file:
+  - .env
 services:
   appserver:
     overrides:
       volumes:
 #        // TODO: Add each file and folder need for project
-        - "./:/app/wordpress/wp-content/themes/sage"
-        - "/app/wordpress/wp-content/themes/sage/wordpress/"
+        - "./:/app/wordpress/wp-content/themes/celestial"
+        - "/app/wordpress/wp-content/themes/celestial/wordpress/"
 events:
   post-start:
     appserver: |
       composer install
-      wp core download --version=6.4 --path=wordpress
-      wp config create --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --dbhost=database --path=wordpress
       if ! wp core is-installed; then
+        wp config create --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --dbhost=database --path=wordpress
         wp core install \
-          --url=https://my-first-wordpress-app.lndo.site/ \
-          --title="My First Wordpress App" \
+          --url=https://${PROJECT_NAME}.lndo.site/ \
+          --title="${PROJECT_NAME}" \
           --admin_user=admin \
           --admin_password=password \
-          --admin_email=admin@my-first-wordpress-app.lndo.site \
+          --admin_email=admin@${PROJECT_NAME}.lndo.site \
           --path=wordpress
+        wp theme activate celestial --path=wordpress
       fi
 tooling:
   acorn:
