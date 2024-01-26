@@ -7,6 +7,8 @@ config:
 env_file:
   - .env
 services:
+  myadmin:
+    type: phpmyadmin
   appserver:
     overrides:
       volumes:
