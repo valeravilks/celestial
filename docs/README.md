@@ -25,7 +25,8 @@ Brief introduction to the project and its purpose.
 Instructions for installing the project on different platforms.
 
 ### System Requirements
-List of system requirements necessary to run the project.
+
+- php 8.2
 
 ## Project Philosophy
 Certainly! Here's the text formatted in Markdown:
