@@ -3,6 +3,7 @@ recipe: wordpress
 config:
   webroot: wordpress
   php: '8.2'
+  database: mysql:8.0
 env_file:
   - .env
 services:
