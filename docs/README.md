@@ -124,7 +124,11 @@ Ways to contact the project developers and support community.
 - add `name` in `.lando.yml` file as PROJECT_NAME
 
 
+
 ## Issues
 
 - After running "lando start" the site does not open
   - Restart your computer if this is a new project. Docker requires it to accept new configs for the domain
+
+- env variables don't work
+  - Run lando rebuild
