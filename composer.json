@@ -42,8 +42,7 @@
     "php": "^8.0",
     "log1x/acf-composer": "^2.1",
     "log1x/poet": "^2.0",
-    "roots/acorn": "^3.2",
-    "roots/wordpress": "6.4.2"
+    "roots/acorn": "^3.2"
   },
   "require-dev": {
     "phpunit/phpunit": "^10.4",
@@ -57,12 +56,8 @@
   "config": {
     "optimize-autoloader": true,
     "preferred-install": "dist",
-    "sort-packages": true,
-    "allow-plugins": {
-      "roots/wordpress-core-installer": true
-    }
+    "sort-packages": true
   },
-
   "minimum-stability": "dev",
   "prefer-stable": true,
   "scripts": {
@@ -82,7 +77,6 @@
       "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
-    },
-    "wordpress-install-dir": "wordpress"
+    }
   }
 }
