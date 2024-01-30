@@ -20,12 +20,10 @@ events:
     appserver: |
       cd wordpress
 
-      if [ ! -f "wp-setting.php" ]; then
+      if [ ! -f "wp-settings.php" ]; then
         wp core download --version=${WORDPRESS_VERSION} --skip-content
         wp config create --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --dbhost=database
-      fi
 
-      if [ ! wp core is-installed ]; then
         wp core install \
           --url=https://${PROJECT_NAME}.lndo.site/ \
           --title="${PROJECT_NAME}" \
