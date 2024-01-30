@@ -26,7 +26,6 @@ events:
       fi
 
       if [ ! wp core is-installed ]; then
-        wp config create --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --dbhost=database
         wp core install \
           --url=https://${PROJECT_NAME}.lndo.site/ \
           --title="${PROJECT_NAME}" \
