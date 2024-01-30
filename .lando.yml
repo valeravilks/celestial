@@ -13,8 +13,8 @@ services:
     overrides:
       volumes:
 #        // TODO: Add each file and folder need for project
-        - "./:/app/wordpress/wp-content/themes/${THEME_NAME}"
-        - "/app/wordpress/wp-content/themes/celestial/${THEME_NAME}/"
+        - "./:/app/wordpress/wp-content/themes/celestial"
+        - "/app/wordpress/wp-content/themes/celestial/wordpress/"
 events:
   post-start:
     appserver: |
@@ -32,7 +32,7 @@ events:
           --admin_user=${ADMIN_USER} \
           --admin_password=${ADMIN_PASSWORD} \
           --admin_email=admin@${PROJECT_NAME}.lndo.site
-        wp theme activate ${THEME_NAME}
+        wp theme activate celestial
       fi
 tooling:
   acorn:
