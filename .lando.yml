@@ -13,22 +13,27 @@ services:
     overrides:
       volumes:
 #        // TODO: Add each file and folder need for project
-        - "./:/app/wordpress/wp-content/themes/celestial"
-        - "/app/wordpress/wp-content/themes/celestial/wordpress/"
+        - "./:/app/wordpress/wp-content/themes/${THEME_NAME}"
+        - "/app/wordpress/wp-content/themes/celestial/${THEME_NAME}/"
 events:
   post-start:
     appserver: |
-      composer install
-      if ! wp core is-installed --path=wordpress; then
-        wp config create --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --dbhost=database --path=wordpress
+      cd wordpress
+
+      if [ ! -f "wp-setting.php" ]; then
+        wp core download --version=${WORDPRESS_VERSION} --skip-content
+        wp config create --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --dbhost=database
+      fi
+
+      if [ ! wp core is-installed ]; then
+        wp config create --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --dbhost=database
         wp core install \
           --url=https://${PROJECT_NAME}.lndo.site/ \
           --title="${PROJECT_NAME}" \
-          --admin_user=admin \
-          --admin_password=password \
-          --admin_email=admin@${PROJECT_NAME}.lndo.site \
-          --path=wordpress
-        wp theme activate celestial --path=wordpress
+          --admin_user=${ADMIN_USER} \
+          --admin_password=${ADMIN_PASSWORD} \
+          --admin_email=admin@${PROJECT_NAME}.lndo.site
+        wp theme activate ${THEME_NAME}
       fi
 tooling:
   acorn:
