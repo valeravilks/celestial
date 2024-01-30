@@ -120,7 +120,7 @@ Ways to contact the project developers and support community.
 
 ## Start New Project
 
-- add `PROJECT_NAME` in `.env` (unique project name without spaces!)
+- add `PROJECT_NAME` in `.lando.env` (unique project name without spaces!)
 - add `name` in `.lando.yml` file as PROJECT_NAME
 
 
