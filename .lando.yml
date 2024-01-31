@@ -6,6 +6,8 @@ config:
   database: mysql:8.0
 env_file:
   - .lando.env
+excludes:
+  - wordpress
 services:
   myadmin:
     type: phpmyadmin
