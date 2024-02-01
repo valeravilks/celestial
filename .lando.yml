@@ -7,7 +7,8 @@ config:
 env_file:
   - .lando.env
 excludes:
-  - wordpress
+  - vendor
+  - node_modules
 services:
   myadmin:
     type: phpmyadmin
