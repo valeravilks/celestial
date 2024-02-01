@@ -1,7 +1,7 @@
 name: celestial
 recipe: wordpress
 config:
-  webroot: wordpress
+  webroot: ../lando/site
   php: '8.2'
   database: mysql:8.0
 env_file:
@@ -14,13 +14,11 @@ services:
   appserver:
     overrides:
       volumes:
-#        // TODO: Add each file and folder need for project
-        - "./:/app/wordpress/wp-content/themes/celestial"
-        - "/app/wordpress/wp-content/themes/celestial/wordpress/"
+        - "./:/lando/site/wp-content/themes/celestial"
 events:
   post-start:
     appserver: |
-      cd wordpress
+      cd /lando/site
 
       if [ ! -f "wp-settings.php" ]; then
         wp core download --version=${WORDPRESS_VERSION} --skip-content
