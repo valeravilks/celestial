@@ -35,4 +35,4 @@ events:
 tooling:
   acorn:
     service: appserver
-    cmd: wp --path=/app/wordpress acorn
+    cmd: wp --path=/lando/site acorn
