@@ -23,7 +23,9 @@ events:
       if [ ! -f "wp-settings.php" ]; then
         wp core download --version=${WORDPRESS_VERSION} --skip-content
         wp config create --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --dbhost=database
+      fi
 
+      if ! wp core is-installed; then
         wp core install \
           --url=https://${PROJECT_NAME}.lndo.site/ \
           --title="${PROJECT_NAME}" \
@@ -36,3 +38,6 @@ tooling:
   acorn:
     service: appserver
     cmd: wp --path=/lando/site acorn
+proxy:
+  myadmin:
+    - "phpmyadmin.celestial.lndo.site"
