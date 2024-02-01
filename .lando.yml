@@ -14,6 +14,7 @@ services:
   appserver:
     overrides:
       volumes:
+#        TODO: Create a separate folder for this rather than using the lando folder
         - "./:/lando/site/wp-content/themes/celestial"
 events:
   post-start:
