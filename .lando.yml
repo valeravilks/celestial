@@ -13,6 +13,7 @@ services:
   myadmin:
     type: phpmyadmin
   appserver:
+    app_mount: false
     overrides:
       volumes:
         - "webroot:/webroot"
