@@ -1,7 +1,7 @@
 name: celestial
 recipe: wordpress
 config:
-  webroot: ../lando/site
+  webroot: ../webroot
   php: '8.2'
   database: mysql:8.0
 env_file:
@@ -15,17 +15,16 @@ services:
   appserver:
     overrides:
       volumes:
-        - "./:/lando/site/wp-content/themes/celestial"
+        - "webroot:/webroot"
+        - "./:/webroot/wp-content/themes/celestial"
 events:
   post-start:
     appserver: |
-      cd /lando/site
-
+      cd /webroot
       if [ ! -f "wp-settings.php" ]; then
         wp core download --version=${WORDPRESS_VERSION} --skip-content
         wp config create --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --dbhost=database
       fi
-
       if ! wp core is-installed; then
         wp core install \
           --url=https://${PROJECT_NAME}.lndo.site/ \
@@ -38,7 +37,9 @@ events:
 tooling:
   acorn:
     service: appserver
-    cmd: wp --path=/lando/site acorn
+    cmd: wp --path=/webroot acorn
 proxy:
   myadmin:
     - "phpmyadmin.celestial.lndo.site"
+volumes:
+  webroot:
