@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b032884ec4de6ffad98caccee2755fd",
+    "content-hash": "c3b7b2303bdb74e44bec8ed680877694",
     "packages": [
         {
             "name": "brick/math",
@@ -2392,20 +2392,20 @@
         },
         {
             "name": "log1x/acf-composer",
-            "version": "v2.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Log1x/acf-composer.git",
-                "reference": "71e2695277c4f96bb62bc59e158ee5a4a4754be6"
+                "reference": "70d17315e78e95a75e76f3d7eecd99cfa6b5b30b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Log1x/acf-composer/zipball/71e2695277c4f96bb62bc59e158ee5a4a4754be6",
-                "reference": "71e2695277c4f96bb62bc59e158ee5a4a4754be6",
+                "url": "https://api.github.com/repos/Log1x/acf-composer/zipball/70d17315e78e95a75e76f3d7eecd99cfa6b5b30b",
+                "reference": "70d17315e78e95a75e76f3d7eecd99cfa6b5b30b",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.3|^8.0",
+                "php": "^7.4|^8.0",
                 "stoutlogic/acf-builder": "^1.11"
             },
             "require-dev": {
@@ -2414,6 +2414,7 @@
             "suggest": {
                 "log1x/modern-acf-options": "Gives ACF option pages a much needed design overhaul."
             },
+            "default-branch": true,
             "type": "package",
             "extra": {
                 "acorn": {
@@ -2440,7 +2441,7 @@
             "description": "Create fields, blocks, option pages, and widgets using ACF Builder and Sage 10",
             "support": {
                 "issues": "https://github.com/Log1x/acf-composer/issues",
-                "source": "https://github.com/Log1x/acf-composer/tree/v2.1.0"
+                "source": "https://github.com/Log1x/acf-composer/tree/master"
             },
             "funding": [
                 {
@@ -2448,7 +2449,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-10-14T18:37:36+00:00"
+            "time": "2023-11-16T22:45:02+00:00"
         },
         {
             "name": "log1x/poet",
@@ -7624,7 +7625,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "log1x/acf-composer": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
