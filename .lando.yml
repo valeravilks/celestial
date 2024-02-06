@@ -1,27 +1,22 @@
 name: celestial
 recipe: wordpress
 config:
-  webroot: wordpress
+  webroot: .
   php: '8.2'
   database: mysql:8.0
 env_file:
   - .lando.env
-excludes:
-  - wordpress
 services:
   myadmin:
     type: phpmyadmin
   appserver:
+    app_mount: false
     overrides:
       volumes:
-#        // TODO: Add each file and folder need for project
-        - "./:/app/wordpress/wp-content/themes/celestial"
-        - "/app/wordpress/wp-content/themes/celestial/wordpress/"
+        - "./:/app/wp-content/themes/celestial"
 events:
   post-start:
     appserver: |
-      cd wordpress
-
       if [ ! -f "wp-settings.php" ]; then
         wp core download --version=${WORDPRESS_VERSION} --skip-content
         wp config create --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --dbhost=database
@@ -37,4 +32,4 @@ events:
 tooling:
   acorn:
     service: appserver
-    cmd: wp --path=/app/wordpress acorn
+    cmd: wp acorn
