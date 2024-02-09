@@ -34,7 +34,7 @@ export default async (app) => {
    */
   app
     .setUrl('http://localhost:3000')
-    .setProxyUrl('https://my-first-wordpress-app.lndo.site')
+    .setProxyUrl('https://celestial.lndo.site/ ')
     .watch(['resources/views', 'app']);
 
   /**
