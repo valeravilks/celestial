@@ -132,3 +132,12 @@ Ways to contact the project developers and support community.
 
 - env variables don't work
   - Run lando rebuild
+
+- Routing does not work if the "Post name" is not valued in Permalink
+
+## Create Atom
+
+### Generate component
+
+- run command `lando acorn make:component Atoms/{AtomName}` or `lando acorn make:component Atoms/folder/{AtomName}`
+- ''
