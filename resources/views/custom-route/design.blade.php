@@ -38,6 +38,16 @@
     <hr>
     <x-atoms.link.fill>Link Fill</x-atoms.link.fill>
     <x-atoms.link.outline>Link Outline</x-atoms.link.outline>
+    <div @class(['mt-4'])>
+      <x-atoms.card.sample>
+        <x-atoms.title.h1 class="mb-4">
+          Title 1
+        </x-atoms.title.h1>
+        <x-atoms.link.outline href="https://google.com">
+          Link
+        </x-atoms.link.outline>
+      </x-atoms.card.sample>
+    </div>
   </div>
 
 </div>
