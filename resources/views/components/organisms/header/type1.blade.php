@@ -1,18 +1,18 @@
-<div class="bg-primary py-2">
+<div class="bg-gray py-2">
   <x-atoms.container>
-    <div {{ $attributes->merge(['class' => 'flex']) }}>
-      <x-atoms.link.outline href="/" class="mr-auto">
+    <div {{ $attributes->merge(['class' => 'flex items-center']) }}>
+      <x-atoms.link.simple href="/" class="mr-auto">
         Main site
-      </x-atoms.link.outline>
-      <ul class="flex">
+      </x-atoms.link.simple>
+      <ul class="flex items-center gap-y-2">
         <li>
-          <x-atoms.link.fill>Link1</x-atoms.link.fill>
+          <x-atoms.link.simple class="mr-2">Link1</x-atoms.link.simple>
         </li>
         <li>
-          <x-atoms.link.fill>Link1</x-atoms.link.fill>
+          <x-atoms.link.simple class="mr-2">Link1</x-atoms.link.simple>
         </li>
         <li>
-          <x-atoms.link.fill>Link1</x-atoms.link.fill>
+          <x-atoms.link.simple>Link1</x-atoms.link.simple>
         </li>
       </ul>
     </div>
