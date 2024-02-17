@@ -1,5 +1,4 @@
 <header class="banner container mx-auto px-4">
-  <x-atoms.logo/>
   <a class="brand" href="{{ home_url('/') }}">
     {!! $siteName !!}
   </a>
