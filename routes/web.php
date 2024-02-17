@@ -11,6 +11,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/welcome/', function () {
-    return 'Hello!';
+Route::get('/design', function () {
+    return view('custom-route.design');
 });

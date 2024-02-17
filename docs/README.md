@@ -109,6 +109,23 @@ Code examples demonstrating typical usage scenarios.
 ## Frequently Asked Questions (FAQ)
 Answers to frequently asked questions from users.
 
+## Fork with fonts
+
+In the official Sage documentation you can read how to add fonts to your site.
+https://roots.io/sage/docs/fonts-setup/
+
+To streamline this font loading process, you can use "preload" for fonts.
+```
+add_action('wp_head', function () {
+    $fonts = [
+        'open-sans-latin-500-normal',
+    ];
+    foreach ($fonts as $font) {
+        echo '<link rel="preload" href="' . esc_url(asset('fonts/' . $font . '.woff2')) . '" as="font" type="font/woff2" crossorigin>';
+    }
+});
+```
+
 ## Contribution Guidelines
 Information on how the community can contribute to the development of the project.
 
@@ -132,3 +149,12 @@ Ways to contact the project developers and support community.
 
 - env variables don't work
   - Run lando rebuild
+
+- Routing does not work if the "Post name" is not valued in Permalink
+
+## Create Atom
+
+### Generate component
+
+- run command `lando acorn make:component Atoms/{AtomName}` or `lando acorn make:component Atoms/folder/{AtomName}`
+- ''

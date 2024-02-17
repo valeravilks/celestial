@@ -2,6 +2,10 @@
   {{ __('Skip to content') }}
 </a>
 
+
+
+<x-organisms.header.type1/>
+
 <div class="container mx-auto px-4">
   @include('components.organisms.headers.type-1')
 </div>
