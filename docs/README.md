@@ -152,6 +152,9 @@ Ways to contact the project developers and support community.
 
 - Routing does not work if the "Post name" is not valued in Permalink
 
+- Not package in vendor:publish
+  - Try `lando acorn package:discover`
+
 ## Create Atom
 
 ### Generate component

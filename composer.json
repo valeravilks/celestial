@@ -43,6 +43,7 @@
     "log1x/acf-composer": "dev-master#70d17315e78e95a75e76f3d7eecd99cfa6b5b30b",
     "log1x/poet": "^2.0",
     "roots/acorn": "^4.0",
+    "roots/acorn-prettify": "^1.0",
     "spatie/laravel-ignition": "^2.0"
   },
   "require-dev": {
