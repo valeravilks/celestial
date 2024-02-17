@@ -1,3 +1,3 @@
-<a class="sr-only focus:not-sr-only" href="#main">
+<x-atoms.link.fill class="sr-only focus:not-sr-only" href="#main">
   {{ __('Skip to content') }}
-</a>
+</x-atoms.link.fill>
