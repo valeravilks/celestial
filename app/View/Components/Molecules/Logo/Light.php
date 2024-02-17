@@ -1,11 +1,13 @@
 <?php
 
-namespace App\View\Components\Molecules;
+namespace App\View\Components\Molecules\Logo;
 
 use Illuminate\View\Component;
 
-class Logo extends Component
+class Light extends Component
 {
+    public string $text;
+    public string $url;
     /**
      * Create a new component instance.
      *
@@ -13,7 +15,8 @@ class Logo extends Component
      */
     public function __construct()
     {
-        //
+        $this->text = get_bloginfo('name');
+        $this->url = get_site_url();
     }
 
     /**
@@ -23,6 +26,6 @@ class Logo extends Component
      */
     public function render()
     {
-        return view('components.molecules.logo');
+        return view('components.molecules.logo.light');
     }
 }
