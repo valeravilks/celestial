@@ -3,6 +3,7 @@
 namespace App\View\Components\Molecules\Menus;
 
 use Illuminate\View\Component;
+use Log1x\Navi\Navi;
 
 /**
  * link https://github.com/Log1x/navi
@@ -10,6 +11,7 @@ use Illuminate\View\Component;
 
 class Type extends Component
 {
+    public array $menu = [];
     /**
      * Create a new component instance.
      *
@@ -18,8 +20,14 @@ class Type extends Component
     public function __construct()
     {
 
-        add_action('after_setup_theme', [$this, 'registerMenu']);
-//        var_dump('asdasdasd');
+        $navigation = (new Navi())->build('primary_navigation');
+
+        if ($navigation->isEmpty()) {
+            return;
+        }
+
+        $this->menu = $navigation->toArray();
+//        var_dump($menu);
     }
 
     public function registerMenu()
