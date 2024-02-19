@@ -5,7 +5,7 @@
 @endsection
 
 @section('main')
-  Main
+  @php(the_content())
 @endsection
 
 @section('footer')
