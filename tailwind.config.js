@@ -2,7 +2,7 @@
 const config = {
     content: ['./index.php', './app/**/*.php', './resources/**/*.{php,vue,js}'],
 // add daisyUI plugin
-    plugins: [require("daisyui")],
+    plugins: [require("daisyui"), require('@tailwindcss/typography'),],
     daisyui: {
         darkTheme: "light", // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
     },

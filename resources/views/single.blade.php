@@ -5,7 +5,9 @@
 @endsection
 
 @section('main')
-  @php(the_content())
+  <div class="prose">
+    @php(the_content())
+  </div>
 @endsection
 
 @section('footer')
