@@ -12,3 +12,4 @@ yarn-error.log
 /.phpunit.result.cache
 /.phpunit.cache
 /phpunit.xml.bak
+/wp
