@@ -24,5 +24,18 @@ class ThemeServiceProvider extends SageServiceProvider
     public function boot()
     {
         parent::boot();
+
+        add_filter('render_block', function ($block_content, $block) {
+            if ($block['blockName'] === 'radicle/modal') {
+                return "hello2!";
+            }
+//                return view('blocks.modal', [
+//                    'block' => $block,
+//                    'blockContent' => $block_content,
+//                    'buttonText' => $block['attrs']['buttonText'] ?? null,
+//                    'heading' => $block['attrs']['heading'] ?? null,
+//                ]);
+            return $block_content;
+        }, 10, 2);
     }
 }
