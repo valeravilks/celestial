@@ -1,7 +1,7 @@
 name: celestial
 recipe: wordpress
 config:
-  webroot: .
+  webroot: wp
   php: '8.2'
   database: mysql:8.0
 env_file:
@@ -10,25 +10,10 @@ services:
   myadmin:
     type: phpmyadmin
   appserver:
-    app_mount: false
     overrides:
       volumes:
-        - "./:/app/wp-content/themes/celestial"
-events:
-  post-start:
-    appserver: |
-      if [ ! -f "wp-settings.php" ]; then
-        wp core download --version=${WORDPRESS_VERSION} --skip-content
-        wp config create --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --dbhost=database
-
-        wp core install \
-          --url=https://${PROJECT_NAME}.lndo.site/ \
-          --title="${PROJECT_NAME}" \
-          --admin_user=${ADMIN_USER} \
-          --admin_password=${ADMIN_PASSWORD} \
-          --admin_email=admin@${PROJECT_NAME}.lndo.site
-        wp theme activate celestial
-      fi
+        - "./:/app/wp/wp-content/themes/celestial"
+        - "/app/wp/wp-content/themes/celestial/wp"
 tooling:
   acorn:
     service: appserver
