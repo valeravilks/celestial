@@ -1,4 +1,4 @@
-<div class="bg-gray py-2">
+<div class="bg-primary py-2">
   <x-atoms.container>
     <div {{ $attributes->merge(['class' => 'flex items-center']) }}>
       <x-molecules.logo.light class="grow"/>
