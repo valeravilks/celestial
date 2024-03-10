@@ -1,13 +1,15 @@
-@extends('components.organisms.layouts.type-1')
+@extends('components.atoms.layout.one-column')
 
-@section('content')
-  @include('partials.page-header')
+@section('header')
+  <x-organisms.header.type1/>
+@endsection
 
-  @if (! have_posts())
-    <x-alert type="warning">
-      {!! __('Sorry, but the page you are trying to view does not exist.', 'sage') !!}
-    </x-alert>
+@section('main')
+  <x-atoms.title.h1 class="text-center mt-4">
+    404 page
+  </x-atoms.title.h1>
+@endsection
 
-    {!! get_search_form(false) !!}
-  @endif
+@section('footer')
+  footer
 @endsection
