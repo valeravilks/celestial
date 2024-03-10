@@ -5,8 +5,10 @@
 @endsection
 
 @section('main')
-  <div class="prose">
-    @php(the_content())
+  <div class="container mx-auto py-2">
+    <div class="prose">
+      @php(the_content())
+    </div>
   </div>
 @endsection
 
