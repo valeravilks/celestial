@@ -6,6 +6,10 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
+/**
+ * Component container
+ */
+
 class Container extends Component
 {
     /**

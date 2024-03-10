@@ -11,50 +11,71 @@
 <?php do_action('get_header'); ?>
 
 <div id="app">
-
-  <div class="container mx-auto">
-    <div class="grid grid-cols-2 gap-2">
-      <x-atoms.example/>
-      <x-atoms.docs-commets.index :class="App\View\Components\Atoms\Example::class"/>
-    </div>
-    <hr>
-    <div class="grid grid-cols-2 gap-2">
-      <div class="">
-        @foreach($mockHeaders as $text)
-          <x-atoms.headers>
-            {{ $text }}
-          </x-atoms.headers>
-        @endforeach
+  <div class="grid grid-cols-4 gap-x-3 p-4">
+    <div class="bg-gray">Menu</div>
+    <div class="col-span-3 mb-4">
+      <div class="grid grid-cols-3 mb-4">
+        <div>
+          <x-atoms.grid.container>
+            <div class="bg-primary text-white">Container component</div>
+          </x-atoms.grid.container>
+        </div>
+        <div class="col-span-2">
+          <x-atoms.docs-commets.index :class="App\View\Components\Atoms\Grid\Container::class"/>
+        </div>
       </div>
-      <x-atoms.docs-commets.index :class="App\View\Components\Atoms\Headers::class"/>
+      <div class="col-span-3 mb-4">
+        <div class="grid grid-cols-3 mb-4">
+          <div>
+            <x-atoms.example/>
+          </div>
+          <div class="col-span-2">
+            <x-atoms.docs-commets.index :class="App\View\Components\Atoms\Example::class"/>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-3 mb-4">
+        <div class="grid grid-cols-3 mb-4">
+          <div>
+            @foreach($mockHeaders as $text)
+              <x-atoms.headers>
+                {{ $text }}
+              </x-atoms.headers>
+            @endforeach
+          </div>
+          <div class="col-span-2">
+            <x-atoms.docs-commets.index :class="App\View\Components\Atoms\Headers::class"/>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-3 mb-4">
+        <div class="grid grid-cols-3 mb-4">
+          <div>
+            <x-atoms.title.h1>Title 1</x-atoms.title.h1>
+            <x-atoms.title.h2>Title 2</x-atoms.title.h2>
+            <x-atoms.title.h3>Title 3</x-atoms.title.h3>
+            <x-atoms.title.h4>Title 4</x-atoms.title.h4>
+            <x-atoms.title.h5>Title 5</x-atoms.title.h5>
+            <x-atoms.title.h6>Title 6</x-atoms.title.h6>
+          </div>
+          <div class="col-span-2">
+            <x-atoms.docs-commets.index :class="App\View\Components\Atoms\Title\H1::class"/>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-3 mb-4">
+        <div class="grid grid-cols-3 mb-4">
+          <div>
+            <x-atoms.link.fill>Link Fill</x-atoms.link.fill>
+            <x-atoms.link.outline>Link Outline</x-atoms.link.outline>
+          </div>
+          <div class="col-span-2">
+            <x-atoms.docs-commets.index :class="App\View\Components\Atoms\Link\Fill::class"/>
+          </div>
+        </div>
+      </div>
     </div>
-    <hr>
-    <x-atoms.title.h1>Title 1</x-atoms.title.h1>
-    <x-atoms.title.h2>Title 2</x-atoms.title.h2>
-    <x-atoms.title.h3>Title 3</x-atoms.title.h3>
-    <x-atoms.title.h4>Title 4</x-atoms.title.h4>
-    <x-atoms.title.h5>Title 5</x-atoms.title.h5>
-    <x-atoms.title.h6>Title 6</x-atoms.title.h6>
-    <hr>
-    <x-atoms.link.fill>Link Fill</x-atoms.link.fill>
-    <x-atoms.link.outline>Link Outline</x-atoms.link.outline>
-    <div @class(['mt-4'])>
-      <x-atoms.card.sample>
-        <x-atoms.title.h1 class="mb-4">
-          Title 1
-        </x-atoms.title.h1>
-        <x-atoms.link.outline href="https://google.com">
-          Link
-        </x-atoms.link.outline>
-      </x-atoms.card.sample>
-    </div>
-    <hr>
-
   </div>
-  <x-atoms.grid.container>
-    <div class="bg-primary text-white">This text in container</div>
-  </x-atoms.grid.container>
-
 </div>
 
 <?php do_action('get_footer'); ?>
