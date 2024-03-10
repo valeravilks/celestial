@@ -48,7 +48,12 @@
         </x-atoms.link.outline>
       </x-atoms.card.sample>
     </div>
+    <hr>
+
   </div>
+  <x-atoms.grid.container>
+    <div class="bg-primary text-white">This text in container</div>
+  </x-atoms.grid.container>
 
 </div>
 
