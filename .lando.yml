@@ -17,4 +17,4 @@ services:
 tooling:
   acorn:
     service: appserver
-    cmd: wp acorn
+    cmd: wp acorn --path=wp
