@@ -40,6 +40,7 @@
   },
   "require": {
     "php": "^8.0",
+    "blade-ui-kit/blade-icons": "^1.6",
     "log1x/acf-composer": "dev-master#70d17315e78e95a75e76f3d7eecd99cfa6b5b30b",
     "log1x/navi": "^2.0",
     "log1x/poet": "^2.0",
