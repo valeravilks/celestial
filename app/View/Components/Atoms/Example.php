@@ -17,7 +17,7 @@ class Example extends Component
      * example - class name with small letters.
      *
      * If your atom is in some subfolder, indicate the path using the '-' sign.
-     * For example: 'a-headers-title', this means that this file is located in
+     * For example: '< a-headers-title', this means that this file is located in
      * the App\View\Components\Atoms\Headers\Title folder
      */
 
