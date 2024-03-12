@@ -11,5 +11,7 @@
 @endsection
 
 @section('footer')
-  footer
+  <x-organisms.footers.text>
+    Footer type 1. 2023 year.
+  </x-organisms.footers.text>
 @endsection
