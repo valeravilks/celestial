@@ -43,6 +43,7 @@
     "log1x/acf-composer": "dev-master#70d17315e78e95a75e76f3d7eecd99cfa6b5b30b",
     "log1x/navi": "^2.0",
     "log1x/poet": "^2.0",
+    "log1x/sage-svg": "^1.1",
     "phpdocumentor/reflection-docblock": "^5.3",
     "roots/acorn": "^4.0",
     "roots/acorn-prettify": "^1.0",
