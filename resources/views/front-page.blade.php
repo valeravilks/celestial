@@ -1,8 +1,7 @@
 @php
     wp_head();
 @endphp
-<x-molecules.logo.logo1/>
-<x-molecules.menu.menu1 name="primary_navigation"/>
+<x-organisms.headers.header1 menu-slug="primary_navigation"/>
 @php
 //the_content();
 @endphp
