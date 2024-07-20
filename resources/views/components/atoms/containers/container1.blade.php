@@ -1,3 +1,4 @@
-<div data-component='{{ $componentName }}' class="container mx-auto px-4">
+<div data-component='{{ $componentName }}'
+  {{ $attributes->merge(['class' => 'container mx-auto px-4']) }} >
     {{ $slot }}
 </div>
