@@ -1,3 +1,3 @@
-<div {{$attributes->merge(['data-component' => $componentName, 'class' => 'text-white'])}}>
+<div {{$attributes->merge(['data-component' => $componentName, 'class' => ''])}}>
   {{ $slot }}
 </div>
