@@ -10,24 +10,20 @@
   <body @php(body_class())>
     @php(wp_body_open())
 
-    <div id="app">
-      <a class="sr-only focus:not-sr-only" href="#main">
-        {{ __('Skip to content', 'sage') }}
-      </a>
+    <a class="sr-only focus:not-sr-only" href="#main">
+      {{ __('Skip to content', 'sage') }}
+    </a>
 
-      @include('sections.header')
+    <div id="app" class="grid grid-rows-[auto_1fr_auto] min-h-screen">
+
+
+      <x-organisms.headers.header1 menu-slug="primary_navigation"/>
 
       <main id="main" class="main">
         @yield('content')
       </main>
 
-      @hasSection('sidebar')
-        <aside class="sidebar">
-          @yield('sidebar')
-        </aside>
-      @endif
-
-      @include('sections.footer')
+      <x-organisms.footers.footer1/>
     </div>
 
     @php(do_action('get_footer'))

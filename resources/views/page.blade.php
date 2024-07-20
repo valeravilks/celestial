@@ -1,10 +1,7 @@
-@php
-  wp_head();
-@endphp
-@php
-  the_content();
-@endphp
+@extends('layouts.app')
 
-@php
-  wp_footer();
-@endphp
+@section('content')
+  @php
+      the_content();
+  @endphp
+@endsection

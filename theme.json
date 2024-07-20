@@ -31,12 +31,12 @@
           "slug": "transparent"
         },
         {
-          "color": "#000",
+          "color": "#000000",
           "name": "Black",
           "slug": "black"
         },
         {
-          "color": "#fff",
+          "color": "#ffffff",
           "name": "White",
           "slug": "white"
         },
@@ -96,59 +96,9 @@
           "slug": "slate-950"
         },
         {
-          "color": "#f9fafb",
-          "name": "Gray 50",
-          "slug": "gray-50"
-        },
-        {
-          "color": "#f3f4f6",
-          "name": "Gray 100",
-          "slug": "gray-100"
-        },
-        {
-          "color": "#e5e7eb",
-          "name": "Gray 200",
-          "slug": "gray-200"
-        },
-        {
-          "color": "#d1d5db",
-          "name": "Gray 300",
-          "slug": "gray-300"
-        },
-        {
-          "color": "#9ca3af",
-          "name": "Gray 400",
-          "slug": "gray-400"
-        },
-        {
-          "color": "#6b7280",
-          "name": "Gray 500",
-          "slug": "gray-500"
-        },
-        {
-          "color": "#4b5563",
-          "name": "Gray 600",
-          "slug": "gray-600"
-        },
-        {
-          "color": "#374151",
-          "name": "Gray 700",
-          "slug": "gray-700"
-        },
-        {
-          "color": "#1f2937",
-          "name": "Gray 800",
-          "slug": "gray-800"
-        },
-        {
-          "color": "#111827",
-          "name": "Gray 900",
-          "slug": "gray-900"
-        },
-        {
-          "color": "#030712",
-          "name": "Gray 950",
-          "slug": "gray-950"
+          "color": "#d9d9d9",
+          "name": "Gray",
+          "slug": "gray"
         },
         {
           "color": "#fafafa",
@@ -1249,6 +1199,31 @@
           "color": "#4c0519",
           "name": "Rose 950",
           "slug": "rose-950"
+        },
+        {
+          "color": "#0003ff",
+          "name": "Primary",
+          "slug": "primary"
+        },
+        {
+          "color": "#c90000",
+          "name": "Secondary",
+          "slug": "secondary"
+        },
+        {
+          "color": "#f6f5f5",
+          "name": "Light",
+          "slug": "light"
+        },
+        {
+          "color": "#361515",
+          "name": "Dark",
+          "slug": "dark"
+        },
+        {
+          "color": "#bbbbbb",
+          "name": "Lightgray",
+          "slug": "lightgray"
         }
       ]
     },
@@ -1274,8 +1249,8 @@
       "customFontSize": false,
       "fontFamilies": [
         {
-          "fontFamily": "ui-sans-serif,system-ui,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"",
-          "name": "Ui-sans-serif",
+          "fontFamily": "Open Sans, sans-serif",
+          "name": "Open Sans",
           "slug": "sans"
         },
         {

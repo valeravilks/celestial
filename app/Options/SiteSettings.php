@@ -31,6 +31,7 @@ class SiteSettings extends Field
 
         $siteSettings
             ->addPartial(Footer1::class);
+//            ->addPartial(Footer2::class);
 
         return $siteSettings->build();
     }
