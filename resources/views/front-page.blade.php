@@ -1,6 +1,7 @@
 @php
     wp_head();
 @endphp
+<x-molecules.logo.logo1/>
 @php
 //the_content();
 @endphp
