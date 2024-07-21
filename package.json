@@ -24,6 +24,7 @@
     "@roots/sage": "6.20.0"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.5.13"
+    "@tailwindcss/typography": "^0.5.13",
+    "js-cookie": "^3.0.5"
   }
 }
