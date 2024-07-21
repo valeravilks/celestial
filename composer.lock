@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1ef90845e444f636ff3dd1ba06e192af",
+    "content-hash": "4a0d44bbefb27f8f4e46a5353bcd7285",
     "packages": [
         {
             "name": "brick/math",
@@ -3823,6 +3823,74 @@
                 }
             ],
             "time": "2024-07-16T11:26:29+00:00"
+        },
+        {
+            "name": "roots/acorn-prettify",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/roots/acorn-prettify.git",
+                "reference": "1d417f8b4dfbf93e82148d7e9a35e5b3cde5cf53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/roots/acorn-prettify/zipball/1d417f8b4dfbf93e82148d7e9a35e5b3cde5cf53",
+                "reference": "1d417f8b4dfbf93e82148d7e9a35e5b3cde5cf53",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.13",
+                "roots/acorn": "^4.0"
+            },
+            "type": "package",
+            "extra": {
+                "acorn": {
+                    "providers": [
+                        "Roots\\AcornPrettify\\AcornPrettifyServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Roots\\AcornPrettify\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brandon Nifong",
+                    "email": "brandon@tendency.me",
+                    "homepage": "https://github.com/log1x"
+                },
+                {
+                    "name": "Ben Word",
+                    "email": "ben@benword.com",
+                    "homepage": "https://github.com/retlehs"
+                },
+                {
+                    "name": "QWp6t",
+                    "email": "craig@roots.io",
+                    "homepage": "https://github.com/qwp6t"
+                }
+            ],
+            "description": "Theme-agnostic front-end modifications for WordPress",
+            "support": {
+                "issues": "https://github.com/roots/acorn-prettify/issues",
+                "source": "https://github.com/roots/acorn-prettify/tree/v1.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/roots",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-07-18T17:56:03+00:00"
         },
         {
             "name": "roots/support",

@@ -122,3 +122,12 @@ add_action('widgets_init', function () {
         'id' => 'sidebar-footer',
     ] + $config);
 });
+
+add_action('wp_head', function () {
+    $fonts = [
+        'open-sans-latin-500-normal',
+    ];
+    foreach ($fonts as $font) {
+        echo '<link rel="preload" href="' . esc_url(asset('fonts/' . $font . '.woff2')) . '" as="font" type="font/woff2" crossorigin>';
+    }
+});

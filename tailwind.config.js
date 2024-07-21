@@ -4,6 +4,7 @@ import typography from '@tailwindcss/typography';
 const config = {
   content: ['./index.php', './app/**/*.php', './resources/**/*.{php,vue,js}'],
 // add daisyUI plugin
+  plugins: [typography],
   theme: {
     extend: {
       fontFamily: {
