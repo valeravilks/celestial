@@ -1,10 +1,11 @@
 import domReady from '@roots/sage/client/dom-ready';
+import { loadJsForComponents } from "@scripts/help.js";
 
 /**
  * Application entrypoint
  */
-domReady(async () => {
-  // ...
+domReady(async() => {
+  await loadJsForComponents();
 });
 
 /**
