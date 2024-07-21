@@ -13,10 +13,8 @@ export default class {
 
     let element = el.querySelector('[data-component-js="close-cookie"]');
 
-    if (Cookies.get('cookie-consent') === 'true') {
-      el.classList.add('hidden');
-    } else {
-      // el.classList.remove('hidden');
+    if (Cookies.get('cookie-consent') !== 'true') {
+      el.classList.remove('hidden');
     }
 
     element.addEventListener('click', () => {
