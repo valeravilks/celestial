@@ -7,8 +7,6 @@
 @section('content')
   <x-organisms.heros.hero1 title="{{ $title }}"/>
   <x-atoms.containers.container1>
-    @php
-      the_content();
-    @endphp
+    <x-atoms.contents.content1/>
   </x-atoms.containers.container1>
 @endsection
