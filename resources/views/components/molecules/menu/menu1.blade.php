@@ -1,7 +1,7 @@
 @if($isMenu())
 
 <ul data-component='{{ $componentName }}'
-  {{ $attributes->merge(['class' => 'flex gap-1']) }}
+  {{ $attributes->merge(['class' => 'flex gap-3']) }}
 >
     @foreach($menuItems as $item)
       <li>
