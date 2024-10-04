@@ -14,7 +14,7 @@ class Footer1 extends Component
      */
     public function __construct()
     {
-        $this->content = get_field('content', 'options') ?? '';
+        $this->content = '';
     }
 
     /**
