@@ -40,7 +40,6 @@
   },
   "require": {
     "php": ">=8.1",
-    "log1x/acf-composer": "^3.0",
     "log1x/navi": "^3.0",
     "roots/acorn": "^5.0",
     "roots/acorn-prettify": "^1.0"
