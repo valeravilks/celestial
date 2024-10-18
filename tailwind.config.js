@@ -8,6 +8,7 @@ const config = {
   theme: {
     container: {
       center: true,
+      padding: '2rem',
     },
     colors: {
       primary: '#0003ff',
