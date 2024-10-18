@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.13",
+    "caniuse-lite": "^1.0.30001669",
     "js-cookie": "^3.0.5"
   }
 }
