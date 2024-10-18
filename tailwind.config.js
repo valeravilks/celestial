@@ -6,6 +6,9 @@ const config = {
 // add daisyUI plugin
   plugins: [typography],
   theme: {
+    container: {
+      center: true,
+    },
     colors: {
       primary: '#0003ff',
       secondary: '#C90000',
