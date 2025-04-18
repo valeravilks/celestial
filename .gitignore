@@ -1,6 +1,9 @@
 # Exclude all wordpress files
 /wp-admin/
-/wp-content/
+/wp-content/*
+!/wp-content/themes/
+/wp-content/themes/*
+!/wp-content/themes/celestial/
 /wp-includes/
 /.htaccess
 /index.php
