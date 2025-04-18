@@ -1,0 +1,26 @@
+# Exclude all wordpress files
+/wp-admin/
+/wp-content/
+/wp-includes/
+/.htaccess
+/index.php
+/license.txt
+/local-xdebuginfo.php
+/readme.html
+/wp-activate.php
+/wp-blog-header.php
+/wp-comments-post.php
+/wp-config.php
+/wp-config-sample.php
+/wp-cron.php
+/wp-links-opml.php
+/wp-load.php
+/wp-login.php
+/wp-mail.php
+/wp-settings.php
+/wp-signup.php
+/wp-trackback.php
+/xmlrpc.php
+
+# Exclude IDE files
+.idea
