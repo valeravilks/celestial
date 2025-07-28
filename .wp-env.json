@@ -1,0 +1,7 @@
+{
+	"plugins": [
+		"./plugins/landing-pages",
+		"./blocks"
+	],
+	"themes": [ "./theme" ]
+}
