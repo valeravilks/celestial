@@ -7,7 +7,14 @@
 		},
 		"color": {
 			"defaultPalette": false,
-			"custom": false
+			"custom": false,
+			"palette": [
+				{
+					"color": "#0000FF",
+					"name": "Primary",
+					"slug": "primary"
+				}
+			]
 		},
 		"spacing": {
 			"units": [
