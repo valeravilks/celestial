@@ -1,17 +1,17 @@
 <?php
 /**
- * Plugin Name:       Blocks
- * Description:       Example block scaffolded with Create Block tool.
- * Version:           0.1.0
+ * Plugin Name: Custom Blocks Collection
+ * Description: A comprehensive collection of custom Gutenberg blocks designed to enhance your WordPress editing experience. This plugin provides reusable, responsive, and feature-rich blocks that integrate seamlessly with the WordPress block editor, allowing you to create engaging content with advanced functionality and styling options.
+ * Version: 0.1.0
  * Requires at least: 6.7
- * Requires PHP:      7.4
- * Author:            The WordPress Contributors
- * License:           GPL-2.0-or-later
- * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       blocks
- *
- * @package CreateBlock
+ * Requires PHP: 8.0
+ * Author: dreamersofday
+ * Author URI: https://dreamersofday.co
+ * License: GPL-2.0-or-later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain: custom-blocks-collection
  */
+
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
