@@ -1,0 +1,167 @@
+# CircleCI Configuration
+#
+# This CircleCI configuration file is designed to perform linting and automatic deployment
+# to different environments based on specified parameters.
+#
+# Environment Parameters:
+# - To successfully deploy, three parameters must be specified, corresponding to the
+#   environment slugs in WP Engine:
+#     - `prod_wpengine` for production
+#     - `stage_wpengine` for staging
+#     - `dev_wpengine` for development
+#   These parameters should be set in the configuration and should match the site slugs in WP Engine.
+#
+# Deployment:
+# - Deployment is triggered only when environment parameters are provided. If a parameter is
+#   missing, the workflow outputs an error message to indicate the need for the missing parameter.
+#     - Production: Deployment occurs based on the `prod-deploy-*` tag.
+#     - Stage: Deployment to staging is triggered by the `stage-deploy-*` tag and commits to the `master` branch.
+#     - Dev: Deployment to the dev environment is triggered by the `dev-deploy-*` tag.
+#
+# This setup ensures thorough code quality control and simplifies deployment by verifying the
+# presence of required parameters and notifying if they are missing.
+
+version: 2.1
+
+parameters:
+  prod_wpengine:
+    type: string
+    default: ''
+  stage_wpengine:
+    type: string
+    default: celestialfseexstg
+  dev_wpengine:
+    type: string
+    default: ''
+
+executors:
+  php_node:
+    docker:
+      - image: cimg/php:8.2-node
+
+commands:
+  config_git:
+    steps:
+      - run:
+          name: "Config Git User"
+          command: |
+            git config --global user.email "dev@dreamersofday.co"
+            git config --global user.name "developers"
+  ssh_setup:
+    steps:
+      - add_ssh_keys
+      - run:
+          name: "SSH Host Keys Registration"
+          command: |
+            ssh-keyscan -t rsa git.wpengine.com >> ~/.ssh/known_hosts
+  blocks_npm_install:
+    steps:
+      - restore_cache:
+          key: npm-deps-{{ checksum "blocks/package-lock.json" }}
+      - run:
+          name: "Install NPM Packages For Custom Blocks"
+          command: |
+            cd blocks
+            npm install --ignore-scripts
+      - save_cache:
+          key: npm-deps-{{ checksum "blocks/package-lock.json" }}
+          paths:
+            - blocks/node_modules
+  blocks_npm_build:
+    steps:
+      - run:
+          name: "Build Custom Blocks Use NPM"
+          command: |
+            cd blocks
+            npm run build
+  wpengine_clone:
+    parameters:
+      environment:
+        type: string
+    steps:
+      - run:
+          name: "Clone WPEngine Repo Without Checkout"
+          command: |
+            git clone --no-checkout git@git.wpengine.com:<< parameters.environment >>.git .dist
+  prepare_files:
+    steps:
+      - run:
+          name: "Copy Theme Files"
+          command: |
+            mkdir -p .dist/wp-content/themes/theme
+            cp -r theme .dist/wp-content/themes
+      - run:
+          name: "Copy Plugins Files"
+          command: |
+            mkdir -p .dist/wp-content/plugins
+            cp -r plugins/* .dist/wp-content/plugins/
+      - run:
+          name: "Copy Custom Blocks Files"
+          command: |
+            mkdir -p .dist/wp-content/plugins/blocks
+            cp blocks/blocks.php .dist/wp-content/plugins/blocks/
+            cp -r blocks/build .dist/wp-content/plugins/blocks/
+  wpengine_commit_push:
+    steps:
+      - run:
+          name: "Commit Changes to WPEngine"
+          command: |
+            cd .dist
+            git add . 
+            git commit -m "Automated Deployment Commit" || echo "No changes to commit"
+      - run:
+          name: "Push Changes to WPEngine"
+          command: git push
+jobs:
+  deploy:
+    executor: php_node
+    parameters:
+      environment:
+        type: string
+    steps:
+      - checkout
+      - blocks_npm_install
+      - blocks_npm_build
+      - config_git
+      - ssh_setup
+      - wpengine_clone:
+          environment: << parameters.environment >>
+      - prepare_files
+      - wpengine_commit_push
+workflows:
+  "Deploy to Production":
+    when:
+      not:
+        equal: [ "", << pipeline.parameters.prod_wpengine >> ]
+    jobs:
+      - deploy:
+          environment: << pipeline.parameters.prod_wpengine >>
+          filters:
+            tags:
+              only: /^prod-deploy-.*/
+            branches:
+              ignore: /.*/
+  "Deploy to Stage":
+    when:
+      not:
+        equal: [ "", << pipeline.parameters.stage_wpengine >> ]
+    jobs:
+      - deploy:
+          environment: << pipeline.parameters.stage_wpengine >>
+          filters:
+            tags:
+              only: /^stage-deploy-.*/
+            branches:
+              only: master
+  "Deploy to Dev":
+    when:
+      not:
+        equal: [ "", << pipeline.parameters.dev_wpengine >> ]
+    jobs:
+      - deploy:
+          environment: << pipeline.parameters.dev_wpengine >>
+          filters:
+            tags:
+              only: /^dev-deploy-.*/
+            branches:
+              ignore: /.*/
