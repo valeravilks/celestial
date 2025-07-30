@@ -111,7 +111,9 @@ commands:
             git commit -m "Automated Deployment Commit" || echo "No changes to commit"
       - run:
           name: "Push Changes to WPEngine"
-          command: git push
+          command: |
+            cd .dist
+            git push
 jobs:
   deploy:
     executor: php_node
