@@ -2,6 +2,21 @@
 
 All notable changes to the Celestial FSE Starterkit will be documented in this file.
 
+## [0.3.0] - 2025-08-01
+
+### Features
+
+- Add fluid typography support with responsive font sizes
+- Add Inter font with regular (400) and bold (700) weights
+- Add comprehensive spacing scale with responsive values using CSS clamp()
+
+### Documentation
+
+- Add detailed documentation for theme color settings
+- Add detailed documentation for theme font settings
+- Add detailed documentation for theme spacing settings
+- Update README with comprehensive project overview and setup instructions
+
 ## [0.2.0] - 2025-07-30
 
 ### Features
