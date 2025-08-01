@@ -64,6 +64,14 @@ The starter kit includes a customizable color palette defined in the `theme.json
 
 For detailed instructions on how to modify the color palette, add new colors, and use them in your project, see the [Theme Color Settings Documentation](docs/theme-color-settings.md).
 
+### Theme Font Settings
+
+The starter kit allows you to customize fonts used in your project. You can add custom fonts to your theme by placing font files in the theme assets directory and configuring them in the `theme.json` file.
+
+For instructions on how to add and configure fonts in your project, see the [Theme Font Settings Documentation](docs/theme-font-settings.md).
+
+> **TODO:** In future updates, implement font optimization by creating subsets that include only necessary characters for better performance.
+
 ## CI/CD Integration
 
 This project includes CI/CD integration with CircleCI for automated linting and deployment workflows. The configuration enables:
