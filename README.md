@@ -72,6 +72,12 @@ For instructions on how to add and configure fonts in your project, see the [The
 
 > **TODO:** In future updates, implement font optimization by creating subsets that include only necessary characters for better performance.
 
+### Theme Spacing Settings
+
+The starter kit includes a customizable spacing scale defined in the `theme.json` file. This spacing system provides consistent spacing values that can be used throughout your site for margins, padding, and other spacing properties.
+
+For detailed instructions on how to use the spacing system, modify spacing values, and implement them in your project, see the [Theme Spacing Settings Documentation](docs/theme-spacing-settings.md).
+
 ## CI/CD Integration
 
 This project includes CI/CD integration with CircleCI for automated linting and deployment workflows. The configuration enables:
@@ -95,6 +101,8 @@ The Celestial FSE Theme includes custom theme.json configuration with the follow
 - Custom color palette with a primary blue color
 - Disabled default WordPress color palette
 - Disabled custom color options to maintain design consistency
+- Custom spacing scale with responsive values using CSS clamp()
+- Custom font sizes with fluid typography support
 - Removed default block patterns by disabling core-block-patterns support
 
 These configurations help maintain design consistency across the site while providing the necessary customization options for content creators.

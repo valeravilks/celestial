@@ -62,6 +62,20 @@ The current theme includes the Inter font family with the following weights:
 - Regular (400)
 - Bold (700)
 
+### Default Font Sizes
+
+The theme defines the following font sizes:
+
+| Name | Slug | Size | Fluid |
+|------|------|------|-------|
+| Small | small | 0.875rem | No |
+| Medium | medium | 1rem | Yes (min: 1rem, max: 1.125rem) |
+| Large | large | 1.38rem | Yes (min: 1.125rem, max: 1.375rem) |
+| Extra Large | x-large | 1.75rem | Yes (min: 1.75rem, max: 2rem) |
+| Extra Extra Large | xx-large | 2.15rem | Yes (min: 2.15rem, max: 3rem) |
+
+The theme has fluid typography enabled, which means that font sizes can automatically scale based on the viewport size. This provides better readability across different screen sizes without requiring multiple media queries.
+
 ## How to Use Theme Fonts
 
 ### In the Block Editor
