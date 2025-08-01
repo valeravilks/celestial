@@ -13,6 +13,41 @@
 					"color": "#0000FF",
 					"name": "Primary",
 					"slug": "primary"
+				},
+				{
+					"color": "#6C757D",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#FFC107",
+					"name": "Accent",
+					"slug": "accent"
+				},
+				{
+					"color": "#000000",
+					"name": "Black",
+					"slug": "black"
+				},
+				{
+					"color": "#FFFFFF",
+					"name": "White",
+					"slug": "white"
+				},
+				{
+					"color": "#868E96",
+					"name": "Gray",
+					"slug": "gray"
+				},
+				{
+					"color": "#F8F9FA",
+					"name": "Gray Light",
+					"slug": "gray-light"
+				},
+				{
+					"color": "#343A40",
+					"name": "Gray Dark",
+					"slug": "gray-dark"
 				}
 			]
 		},
