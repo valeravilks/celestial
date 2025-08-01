@@ -1,13 +1,9 @@
 {
 	"settings": {
 		"appearanceTools": true,
-		"layout": {
-			"contentSize": "620px",
-			"wideSize": "1000px"
-		},
 		"color": {
-			"defaultPalette": false,
 			"custom": false,
+			"defaultPalette": false,
 			"palette": [
 				{
 					"color": "#0000FF",
@@ -50,6 +46,10 @@
 					"slug": "gray-dark"
 				}
 			]
+		},
+		"layout": {
+			"contentSize": "620px",
+			"wideSize": "1000px"
 		},
 		"spacing": {
 			"units": [
