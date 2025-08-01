@@ -62,6 +62,7 @@
 			]
 		},
 		"typography": {
+			"customFontSize": false,
 			"fontFamilies": [
 				{
 					"fontFace": [
