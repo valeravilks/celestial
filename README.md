@@ -54,6 +54,16 @@ To get started with development:
 
 This will compile your blocks and watch for changes. The blocks in this project are scaffolded using [@wordpress/create-block](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/), which provides a standardized way to create custom WordPress blocks.
 
+## Project Setup
+
+When setting up a new project based on this starter kit, you'll need to configure several aspects to match your project requirements:
+
+### Theme Color Settings
+
+The starter kit includes a customizable color palette defined in the `theme.json` file. When creating a new project, you should update these color settings to match your project's brand colors.
+
+For detailed instructions on how to modify the color palette, add new colors, and use them in your project, see the [Theme Color Settings Documentation](docs/theme-color-settings.md).
+
 ## CI/CD Integration
 
 This project includes CI/CD integration with CircleCI for automated linting and deployment workflows. The configuration enables:
