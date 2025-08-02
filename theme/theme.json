@@ -194,13 +194,13 @@
 	"templateParts": [
 		{
 			"area": "header",
-			"title": "Simple Header",
-			"name": "simple-header"
+			"name": "simple-header",
+			"title": "Simple Header"
 		},
 		{
 			"area": "footer",
-			"title": "Simple Footer",
-			"name": "simple-footer"
+			"name": "simple-footer",
+			"title": "Simple Footer"
 		}
 	],
 	"version": 3,
