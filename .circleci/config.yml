@@ -154,7 +154,7 @@ workflows:
             tags:
               only: /^stage-deploy-.*/
             branches:
-              only: master
+              only: dev
   "Deploy to Dev":
     when:
       not:
