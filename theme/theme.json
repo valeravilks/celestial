@@ -201,6 +201,11 @@
 			"area": "footer",
 			"name": "simple-footer",
 			"title": "Simple Footer"
+		},
+		{
+			"area": "uncategorized",
+			"name": "simple-hero",
+			"title": "Simple Hero"
 		}
 	],
 	"version": 3,
