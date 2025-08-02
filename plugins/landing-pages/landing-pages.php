@@ -3,7 +3,7 @@
 /*
  * Plugin Name: Landing Pages
  * Description: A powerful tool for creating and managing custom landing pages with clean URLs. This plugin registers a custom post type 'landing' that allows you to build dedicated landing pages with custom fields, featured images, and SEO-friendly URLs using the '/lp/' slug structure.
- * Version: 0.2.0
+ * Version: 0.4.0
  * Author: dreamersofday
  * Author URI: https://dreamersofday.co
  * License: GPL v2 or later

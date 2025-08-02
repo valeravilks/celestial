@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Custom Blocks Collection
  * Description: A comprehensive collection of custom Gutenberg blocks designed to enhance your WordPress editing experience. This plugin provides reusable, responsive, and feature-rich blocks that integrate seamlessly with the WordPress block editor, allowing you to create engaging content with advanced functionality and styling options.
- * Version: 0.2.0
+ * Version: 0.4.0
  * Requires at least: 6.7
  * Requires PHP: 8.0
  * Author: dreamersofday

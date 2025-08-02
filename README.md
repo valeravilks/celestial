@@ -78,6 +78,12 @@ The starter kit includes a customizable spacing scale defined in the `theme.json
 
 For detailed instructions on how to use the spacing system, modify spacing values, and implement them in your project, see the [Theme Spacing Settings Documentation](docs/theme-spacing-settings.md).
 
+### Theme Patterns and Block Styles
+
+The starter kit includes pre-designed block patterns and custom block styles that can be used to create consistent and visually appealing layouts.
+
+For information on available patterns, block styles, and how to use them in your project, see the [Theme Patterns and Block Styles Documentation](docs/theme-patterns-and-styles.md).
+
 ## CI/CD Integration
 
 This project includes CI/CD integration with CircleCI for automated linting and deployment workflows. The configuration enables:

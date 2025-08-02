@@ -2,6 +2,39 @@
 
 All notable changes to the Celestial FSE Starterkit will be documented in this file.
 
+## [0.4.0] - 2025-08-02
+
+### Added
+
+- "Media Content 1" pattern
+- Subtitle block style with medium font size
+- Templates:
+    - Single template with header, hero and footer
+    - Page template with header and footer
+    - Simple hero, header and footer parts
+- Layout enhancements:
+    - Wide alignment and improved hero layout
+    - Header spacing adjustments
+    - Increased content/wide sizes
+    - Block gap and padding settings
+
+### Changed
+
+- Updated theme.json configuration:
+    - Template titles and names
+    - Typography settings
+    - "name"/"title" order in template parts
+- Improved index template structure
+- Replaced "footer" with "simple-footer"
+
+### Removed
+
+- Unused header.html and footer.html templates
+- Trailing newline from theme.json
+
+### CI
+
+- Updated CircleCI to deploy dev branch
 ## [0.3.0] - 2025-08-01
 
 ### Features
