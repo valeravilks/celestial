@@ -176,6 +176,15 @@
 		"useRootPaddingAwareAlignments": true
 	},
 	"styles": {
+		"spacing": {
+			"blockGap": "0px",
+			"padding": {
+				"bottom": "0px",
+				"left": "var(--wp--preset--spacing--40)",
+				"right": "var(--wp--preset--spacing--40)",
+				"top": "0px"
+			}
+		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--inter)",
 			"fontStyle": "normal",
