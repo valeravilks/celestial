@@ -54,35 +54,6 @@ To get started with development:
 
 This will compile your blocks and watch for changes. The blocks in this project are scaffolded using [@wordpress/create-block](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/), which provides a standardized way to create custom WordPress blocks.
 
-## Project Setup
-
-When setting up a new project based on this starter kit, you'll need to configure several aspects to match your project requirements:
-
-### Theme Color Settings
-
-The starter kit includes a customizable color palette defined in the `theme.json` file. When creating a new project, you should update these color settings to match your project's brand colors.
-
-For detailed instructions on how to modify the color palette, add new colors, and use them in your project, see the [Theme Color Settings Documentation](docs/theme-color-settings.md).
-
-### Theme Font Settings
-
-The starter kit allows you to customize fonts used in your project. You can add custom fonts to your theme by placing font files in the theme assets directory and configuring them in the `theme.json` file.
-
-For instructions on how to add and configure fonts in your project, see the [Theme Font Settings Documentation](docs/theme-font-settings.md).
-
-> **TODO:** In future updates, implement font optimization by creating subsets that include only necessary characters for better performance.
-
-### Theme Spacing Settings
-
-The starter kit includes a customizable spacing scale defined in the `theme.json` file. This spacing system provides consistent spacing values that can be used throughout your site for margins, padding, and other spacing properties.
-
-For detailed instructions on how to use the spacing system, modify spacing values, and implement them in your project, see the [Theme Spacing Settings Documentation](docs/theme-spacing-settings.md).
-
-### Theme Patterns and Block Styles
-
-The starter kit includes pre-designed block patterns and custom block styles that can be used to create consistent and visually appealing layouts.
-
-For information on available patterns, block styles, and how to use them in your project, see the [Theme Patterns and Block Styles Documentation](docs/theme-patterns-and-styles.md).
 
 ## CI/CD Integration
 
@@ -114,5 +85,7 @@ The Celestial FSE Theme includes custom theme.json configuration with the follow
 These configurations help maintain design consistency across the site while providing the necessary customization options for content creators.
 
 ## Documentation
+
+- [Colors Management](docs/color-management.md)
 
 For a complete list of changes and features, please see the [Changelog](CHANGELOG.md).
