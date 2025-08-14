@@ -8,6 +8,8 @@
             "link": false,
             "background": false,
             "defaultGradients": false,
+			"customDuotone": false,
+			"defaultDuotone": false,
 			"palette": [
 				{
 					"color": "#0000FF",
