@@ -7,6 +7,7 @@
 			"defaultPalette": false,
             "link": false,
             "background": false,
+			"customGradient": false,
             "defaultGradients": false,
 			"customDuotone": false,
 			"defaultDuotone": false,
