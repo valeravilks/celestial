@@ -3,7 +3,11 @@
 		"appearanceTools": true,
 		"color": {
 			"custom": false,
+            "text": false,
 			"defaultPalette": false,
+            "link": false,
+            "background": false,
+            "defaultGradients": false,
 			"palette": [
 				{
 					"color": "#0000FF",
