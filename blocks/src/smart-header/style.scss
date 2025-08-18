@@ -14,17 +14,18 @@
 	width: 100%;
 	z-index: 1000;
 	transition: transform 0.3s ease;
+
+	/* Headroom.js specific styles */
+	&.headroom {
+		will-change: transform;
+	}
+
+	&.headroom--pinned {
+		transform: translateY(0%);
+	}
+
+	&.headroom--unpinned {
+		transform: translateY(-100%);
+	}
 }
 
-/* Headroom.js specific styles */
-.wp-block-celestial-smart-header.headroom {
-	will-change: transform;
-}
-
-.wp-block-celestial-smart-header.headroom--pinned {
-	transform: translateY(0%);
-}
-
-.wp-block-celestial-smart-header.headroom--unpinned {
-	transform: translateY(-100%);
-}
