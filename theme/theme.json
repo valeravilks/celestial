@@ -2,15 +2,14 @@
 	"settings": {
 		"appearanceTools": true,
 		"color": {
+			"background": false,
 			"custom": false,
-            "text": false,
-			"defaultPalette": false,
-            "link": false,
-            "background": false,
-			"customGradient": false,
-            "defaultGradients": false,
 			"customDuotone": false,
+			"customGradient": false,
 			"defaultDuotone": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"link": false,
 			"palette": [
 				{
 					"color": "#0000FF",
@@ -52,7 +51,8 @@
 					"name": "Gray Dark",
 					"slug": "gray-dark"
 				}
-			]
+			],
+			"text": false
 		},
 		"layout": {
 			"contentSize": "1200px",
