@@ -1,0 +1,24 @@
+.wp-block-button.is-style-button-arrow .wp-element-button,
+.wp-block-button.is-style-button-arrow .wp-block-button__link {
+    position: relative;
+    padding-right: 2.75em;
+}
+
+.wp-block-button.is-style-button-arrow .wp-element-button::after,
+.wp-block-button.is-style-button-arrow .wp-block-button__link::after {
+    content: "→";
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform .25s ease, opacity .25s ease;
+    opacity: .9;
+}
+
+.wp-block-button.is-style-button-arrow .wp-element-button:hover::after,
+.wp-block-button.is-style-button-arrow .wp-element-button:focus-visible::after,
+.wp-block-button.is-style-button-arrow .wp-block-button__link:hover::after,
+.wp-block-button.is-style-button-arrow .wp-block-button__link:focus-visible::after {
+    transform: translateY(-50%) translateX(2px);
+    opacity: 1;
+}
