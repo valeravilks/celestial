@@ -24,7 +24,7 @@ import Headroom from "headroom.js";
 
 document.addEventListener('DOMContentLoaded', function() {
     // Select all smart header blocks
-    const smartHeaders = document.querySelectorAll('.wp-block-dod-smart-header');
+    const smartHeaders = document.querySelectorAll('.wp-block-celestial-smart-header');
 
     // Apply headroom.js to each smart header
     smartHeaders.forEach(header => {

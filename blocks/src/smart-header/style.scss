@@ -5,25 +5,26 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-dod-smart-header {
+.wp-block-celestial-smart-header {
 	background-color: #21759b;
 	color: #fff;
 	padding: 2px;
-	position: sticky;
+	position: fixed;
 	top: 0;
+	width: 100%;
 	z-index: 1000;
 	transition: transform 0.3s ease;
 }
 
 /* Headroom.js specific styles */
-.wp-block-dod-smart-header.headroom {
+.wp-block-celestial-smart-header.headroom {
 	will-change: transform;
 }
 
-.wp-block-dod-smart-header.headroom--pinned {
+.wp-block-celestial-smart-header.headroom--pinned {
 	transform: translateY(0%);
 }
 
-.wp-block-dod-smart-header.headroom--unpinned {
+.wp-block-celestial-smart-header.headroom--unpinned {
 	transform: translateY(-100%);
 }
