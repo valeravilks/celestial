@@ -15,9 +15,9 @@ function themeslug_enqueue_block_styles() {
     ) );
 }
 
-add_action( 'init', 'themeslug_enqueue_block_styles' );
+add_action( 'init', 'themeslug_enqueue_block_styles_button' );
 
-function themeslug_enqueue_block_styles() {
+function themeslug_enqueue_block_styles_button() {
     wp_enqueue_block_style( 'core/button', array(
         'handle' => 'themeslug-block-image',
         'src'    => get_theme_file_uri( "assets/blocks/core-button.css" ),
