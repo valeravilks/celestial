@@ -2,6 +2,20 @@
 
 All notable changes to the Celestial FSE Starterkit will be documented in this file.
 
+## [0.5.0] - 2025-08-22
+
+### Added
+
+- New custom block: "React App" (celestial/react-app) that mounts a small React application on the front end via `viewScript` using `@wordpress/element`'s `createRoot`. Includes an interactive counter example and shared styles.
+- Documentation: "Color Management Policy" (docs/color-management.md) describing how colors are centrally managed via theme/theme.json and why editor color controls are disabled.
+- Theme styles: core-button.css and core-image.css to style core block variants.
+- Button style variant: 01-arrow.json for core/button.
+
+### Changed
+
+- Smart Header block: save implementation now renders `<InnerBlocks.Content />` to output nested blocks in the front end.
+- README: link to the new Color Management documentation and clarify quick start steps for building blocks and running the local wp-env environment.
+
 ## [0.4.0] - 2025-08-02
 
 ### Added
