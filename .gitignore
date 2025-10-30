@@ -1,5 +1,7 @@
 .idea
 /node_modules/
-/blocks/build
-/blocks/node_modules
 
+core-plugin/vendor/
+
+core-plugin/**/build
+blocks/**/build

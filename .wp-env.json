@@ -1,7 +1,7 @@
 {
 	"plugins": [
-		"./plugins/landing-pages",
-		"./blocks"
+		"./core-plugin",
+        "./blocks"
 	],
 	"themes": [ "./theme" ]
 }
