@@ -1,0 +1,34 @@
+{
+  "name": "celestial",
+  "version": "1.0.0",
+  "description": "A WordPress Full Site Editing starter kit that provides a foundation for building modern WordPress themes and plugins.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "npx run-s build:*",
+    "dev": "npx run-p watch:*",
+    "build:editor": "wp-scripts build core-plugin/editor/index.js --output-path=core-plugin/editor/build",
+    "build:blocks": "wp-scripts build --source-path=blocks/src --output-path=blocks/build --blocks-manifest",
+    "watch:editor": "wp-scripts start core-plugin/editor/index.js --output-path=core-plugin/editor/build",
+    "watch:blocks": "wp-scripts start --source-path=blocks/src --output-path=blocks/build --blocks-manifest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valeravilks/celestial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valeravilks/celestial/issues"
+  },
+  "homepage": "https://github.com/valeravilks/celestial#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^30.27.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "headroom.js": "^0.12.0"
+  }
+}

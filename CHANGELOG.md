@@ -2,6 +2,21 @@
 
 All notable changes to the Celestial FSE Starterkit will be documented in this file.
 
+## [1.0.0] - 2025-10-30
+
+### Added
+
+- Updated spacing size tokens in `theme.json` for improved consistency and clarity.
+
+### Changed
+
+- Renamed spacing size slugs in `theme.json` to a simplified, consistent naming scheme.
+- Reorganized project structure to streamline development and deployment:
+  - Introduced a clearer separation of concerns for the core plugin code (e.g., `core-plugin/modules/*`).
+  - Added a dedicated `plugins/landing-pages/landing-pages.php` entry for the Landing Pages functionality.
+  - Synchronized project configs and metadata (`package.json`, `composer.json`) and updated ignore/config files in the `blocks/` workspace.
+- Updated dependency lockfiles to reflect the new structure.
+
 ## [0.5.0] - 2025-08-22
 
 ### Added
