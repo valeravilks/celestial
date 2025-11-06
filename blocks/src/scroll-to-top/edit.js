@@ -1,17 +1,12 @@
 /**
- * Retrieves the translation of text.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-i18n/
- */
-import { __ } from '@wordpress/i18n';
-
-/**
  * React hook that is used to mark the block wrapper element.
  * It provides all the necessary props like the class name.
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { useBlockProps } from '@wordpress/block-editor';
+import {useBlockProps, InspectorControls} from '@wordpress/block-editor';
+import {Tip, PanelBody, ToggleControl} from "@wordpress/components";
+import {useState} from "@wordpress/element";
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -21,10 +16,35 @@ import { useBlockProps } from '@wordpress/block-editor';
  */
 import './editor.scss';
 import {Icon} from "./icon";
+
 export default function Edit() {
+	const [showComponent, setShowComponent] = useState(true);
+	const blockProps = useBlockProps();
+
 	return (
-		<button { ...useBlockProps() }>
-			<Icon/>
-		</button>
+		<>
+
+			{showComponent && (
+				<>
+					<button {...blockProps}>
+						<Icon/>
+					</button>
+					<Tip>
+						This is an example element. The actual behavior of the block can be seen on the page.
+					</Tip>
+				</>
+			)}
+
+			<InspectorControls>
+				<PanelBody>
+					<ToggleControl
+						__nextHasNoMarginBottom
+						checked={showComponent}
+						label="Show component"
+						onChange={() => setShowComponent(!showComponent)}
+					/>
+				</PanelBody>
+			</InspectorControls>
+		</>
 	);
 }
