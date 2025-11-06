@@ -7,10 +7,6 @@
 	"category": "widgets",
 	"icon": "smiley",
 	"description": "Example block scaffolded with Create Block tool.",
-	"example": {},
-	"supports": {
-		"html": false
-	},
 	"textdomain": "scroll-to-top",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",

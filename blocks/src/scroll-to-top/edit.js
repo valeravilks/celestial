@@ -20,19 +20,11 @@ import { useBlockProps } from '@wordpress/block-editor';
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
 import './editor.scss';
-
-/**
- * The edit function describes the structure of your block in the context of the
- * editor. This represents what the editor will render when the block is used.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#edit
- *
- * @return {Element} Element to render.
- */
+import {Icon} from "./icon";
 export default function Edit() {
 	return (
-		<p { ...useBlockProps() }>
-			{ __( 'Scroll To Top – hello from the editor!', 'scroll-to-top' ) }
-		</p>
+		<button { ...useBlockProps() }>
+			<Icon/>
+		</button>
 	);
 }
