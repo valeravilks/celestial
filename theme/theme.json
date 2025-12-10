@@ -232,6 +232,7 @@
 			}
 		},
 		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--roboto)",
 			"fontSize": "var(--wp--preset--font-size--medium)",
 			"lineHeight": "1.6"
 		}
