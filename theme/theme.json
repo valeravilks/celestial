@@ -4,11 +4,13 @@
 		"blocks": {
 			"core/heading": {
 				"typography": {
+					"fontFamilies": [],
 					"fontSizes": []
 				}
 			},
 			"core/paragraph": {
 				"typography": {
+					"fontFamilies": [],
 					"fontSizes": []
 				}
 			}
