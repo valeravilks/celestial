@@ -142,27 +142,21 @@
 					"slug": "small"
 				},
 				{
-					"fluid": {
-						"max": "1.125rem",
-						"min": "1rem"
-					},
+					"fluid": false,
 					"name": "Medium",
 					"size": "1rem",
 					"slug": "medium"
 				},
 				{
-					"fluid": {
-						"max": "1.375rem",
-						"min": "1.125rem"
-					},
+					"fluid": false,
 					"name": "Large",
-					"size": "1.38rem",
+					"size": "1.25rem",
 					"slug": "large"
 				},
 				{
 					"fluid": {
 						"max": "2rem",
-						"min": "1.75rem"
+						"min": "1.5rem"
 					},
 					"name": "Extra Large",
 					"size": "1.75rem",
@@ -171,10 +165,10 @@
 				{
 					"fluid": {
 						"max": "3rem",
-						"min": "2.15rem"
+						"min": "2rem"
 					},
 					"name": "Extra Extra Large",
-					"size": "2.15rem",
+					"size": "2.25rem",
 					"slug": "xx-large"
 				}
 			],
@@ -188,6 +182,46 @@
 		"useRootPaddingAwareAlignments": true
 	},
 	"styles": {
+		"elements": {
+			"h1": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--xx-large)"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--x-large)"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--large)"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--medium)"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--small)"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--small)",
+					"letterSpacing": "0.08em",
+					"textTransform": "uppercase"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontWeight": "700",
+					"lineHeight": "1.2"
+				}
+			}
+		},
 		"spacing": {
 			"blockGap": "0px",
 			"padding": {
@@ -198,9 +232,8 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--inter)",
-			"fontStyle": "normal",
-			"fontWeight": "400"
+			"fontSize": "var(--wp--preset--font-size--medium)",
+			"lineHeight": "1.6"
 		}
 	},
 	"templateParts": [
