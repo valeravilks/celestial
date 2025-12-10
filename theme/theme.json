@@ -1,6 +1,18 @@
 {
 	"settings": {
-		"appearanceTools": true,
+		"appearanceTools": false,
+		"blocks": {
+			"core/heading": {
+				"typography": {
+					"fontSizes": []
+				}
+			},
+			"core/paragraph": {
+				"typography": {
+					"fontSizes": []
+				}
+			}
+		},
 		"color": {
 			"background": false,
 			"custom": false,
