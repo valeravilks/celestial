@@ -40,6 +40,9 @@
 				"color": {
 					"background": false,
 					"text": false
+				},
+				"spacing": {
+					"padding": true
 				}
 			}
 		},
