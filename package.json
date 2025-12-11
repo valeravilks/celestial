@@ -10,9 +10,9 @@
     "build": "npx run-s build:*",
     "dev": "npx run-p watch:*",
     "build:editor": "wp-scripts build src/core-plugin/editor/index.js --output-path=src/core-plugin/editor/build",
-    "build:blocks": "wp-scripts build --source-path=src/blocks/src --output-path=src/blocks/build --blocks-manifest",
+    "build:blocks": "wp-scripts build --source-path=src/blocks-plugin/src --output-path=src/blocks-plugin/build --blocks-manifest",
     "watch:editor": "wp-scripts start src/core-plugin/editor/index.js --output-path=src/core-plugin/editor/build",
-    "watch:blocks": "wp-scripts start --source-path=src/blocks/src --output-path=src/blocks/build --blocks-manifest"
+    "watch:blocks": "wp-scripts start --source-path=src/blocks-plugin/src --output-path=src/blocks-plugin/build --blocks-manifest"
   },
   "repository": {
     "type": "git",
