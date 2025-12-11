@@ -1,6 +1,6 @@
 {
   "name": "celestial",
-  "version": "1.0.0",
+  "version": "0.6.0",
   "description": "A WordPress Full Site Editing starter kit that provides a foundation for building modern WordPress themes and plugins.",
   "main": "index.js",
   "directories": {
@@ -9,10 +9,10 @@
   "scripts": {
     "build": "npx run-s build:*",
     "dev": "npx run-p watch:*",
-    "build:editor": "wp-scripts build core-plugin/editor/index.js --output-path=core-plugin/editor/build",
-    "build:blocks": "wp-scripts build --source-path=blocks/src --output-path=blocks/build --blocks-manifest",
-    "watch:editor": "wp-scripts start core-plugin/editor/index.js --output-path=core-plugin/editor/build",
-    "watch:blocks": "wp-scripts start --source-path=blocks/src --output-path=blocks/build --blocks-manifest"
+    "build:editor": "wp-scripts build src/core-plugin/editor/index.js --output-path=src/core-plugin/editor/build",
+    "build:blocks": "wp-scripts build --source-path=src/blocks-plugin/src --output-path=src/blocks-plugin/build --blocks-manifest",
+    "watch:editor": "wp-scripts start src/core-plugin/editor/index.js --output-path=src/core-plugin/editor/build",
+    "watch:blocks": "wp-scripts start --source-path=src/blocks-plugin/src --output-path=src/blocks-plugin/build --blocks-manifest"
   },
   "repository": {
     "type": "git",

@@ -2,18 +2,28 @@
 
 All notable changes to the Celestial FSE Starterkit will be documented in this file.
 
-## [1.0.0] - 2025-10-30
+## [0.6.0] - 2025-12-11
+
+Note: Release 1.0.0 was withdrawn and replaced by 0.6.0. No public consumers were affected.
 
 ### Added
 
 - Updated spacing size tokens in `theme.json` for improved consistency and clarity.
+- Added local `Roboto` font via `fontFace` in `theme.json` and exposed a clean preset list.
+- Enabled fluid typography in `theme.json` and introduced refined preset font sizes.
+- Added dedicated build scripts for the split workspaces: `build:editor` (core plugin editor) and `build:blocks` (blocks bundle).
 
 ### Changed
 
 - Renamed spacing size slugs in `theme.json` to a simplified, consistent naming scheme.
+- Hardened and standardized `theme.json` settings:
+  - Disabled editor color customization, gradients, and duotone to enforce the theme palette.
+  - Standardized color palette names and slugs; clarified layout sizes (`contentSize`, `wideSize`).
+  - Tightened block supports (e.g., `core/button` border radius presets, `core/group` background/text color) for consistency.
 - Reorganized project structure to streamline development and deployment:
   - Introduced a clearer separation of concerns for the core plugin code (e.g., `core-plugin/modules/*`).
-  - Added a dedicated `plugins/landing-pages/landing-pages.php` entry for the Landing Pages functionality.
+  - Split the code into `src/core-plugin` and `src/blocks-plugin` workspaces with separate outputs.
+  - Added a dedicated Landing Pages module under `src/core-plugin/modules/LandingPages/` with a PHP entry point.
   - Synchronized project configs and metadata (`package.json`, `composer.json`) and updated ignore/config files in the `blocks/` workspace.
 - Updated dependency lockfiles to reflect the new structure.
 

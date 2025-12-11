@@ -1,15 +1,7 @@
 <?php
 /**
- * Plugin Name: Custom Blocks Collection
+ * Plugin Name: Celestial Custom Blocks
  * Description: A comprehensive collection of custom Gutenberg blocks designed to enhance your WordPress editing experience. This plugin provides reusable, responsive, and feature-rich blocks that integrate seamlessly with the WordPress block editor, allowing you to create engaging content with advanced functionality and styling options.
- * Version: 0.4.0
- * Requires at least: 6.7
- * Requires PHP: 8.0
- * Author: dreamersofday
- * Author URI: https://dreamersofday.co
- * License: GPL-2.0-or-later
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: custom-blocks-collection
  */
 
 

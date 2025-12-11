@@ -1,7 +1,8 @@
 <?php
 
 /**
- * Plugin Name: Core
+ * Plugin Name: Celestial Core Plugin
+ * Description: This plugin contains all the core functionality required for the starter kit to work properly
  */
 
 if (!defined('ABSPATH')) {
