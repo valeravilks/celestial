@@ -1,0 +1,16 @@
+{
+  "name": "valeravilks/celestial-core-plugin",
+  "description": "Core functionality for Celestial WordPress Starter Kit",
+  "autoload": {
+    "psr-4": {
+      "ValeraVilks\\Celestial\\": "modules/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Valera Vilks",
+      "email": "valeravilks@gmail.com"
+    }
+  ],
+  "require": {}
+}

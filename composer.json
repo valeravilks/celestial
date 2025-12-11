@@ -1,18 +1,11 @@
 {
   "name": "valeravilks/celestial",
-  "autoload": {
-    "psr-4": {
-      "ValeraVilks\\Celestial\\": "src/core-plugin/modules"
-    }
-  },
+  "description": "WordPress Starter Kit with modern development workflow",
   "authors": [
     {
       "name": "Valera Vilks",
       "email": "valeravilks@gmail.com"
     }
   ],
-  "require": {},
-  "config": {
-    "vendor-dir": "src/core-plugin/vendor"
-  }
+  "require": {}
 }
