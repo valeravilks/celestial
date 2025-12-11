@@ -12,7 +12,6 @@ This starter kit includes:
 - Block scaffolding using [@wordpress/create-block](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/)
 - A plugin structure for extending WordPress functionality
 - Local development environment configuration using wp-env
-- CI/CD integration with CircleCI for automated linting and deployment
 - Custom color palette configuration with theme.json
 
 ## Development Environment
@@ -53,23 +52,6 @@ To get started with development:
    ```
 
 This will compile your blocks and watch for changes. The blocks in this project are scaffolded using [@wordpress/create-block](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/), which provides a standardized way to create custom WordPress blocks.
-
-
-## CI/CD Integration
-
-This project includes CI/CD integration with CircleCI for automated linting and deployment workflows. The configuration enables:
-
-- Automated deployment to WP Engine environments (development, staging, production)
-- Deployment triggered by specific tags or branch commits
-- Automated building of custom blocks before deployment
-- Proper file structure preparation for WP Engine environments
-
-The deployment process is configured to work with WP Engine hosting and requires the following environment parameters:
-- `prod_wpengine`: Production environment slug
-- `stage_wpengine`: Staging environment slug
-- `dev_wpengine`: Development environment slug
-
-For more details on the CI/CD configuration, see the `.circleci/config.yml` file.
 
 ## Theme Configuration
 
