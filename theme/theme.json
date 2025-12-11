@@ -31,6 +31,16 @@
 					"fontFamilies": [],
 					"fontSizes": []
 				}
+			},
+			"core/group": {
+				"typography": {
+					"fontFamilies": [],
+					"fontSizes": []
+				},
+				"color": {
+					"background": false,
+					"text": false
+				}
 			}
 		},
 		"color": {
