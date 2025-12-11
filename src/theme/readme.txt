@@ -1,6 +1,6 @@
 == Celestial FSE Theme ==
 
-Contributors: dreamersofday
+Contributors: valeravilks
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 8.0
@@ -14,7 +14,7 @@ The starter block theme used for Dreamers Of Day projects.
 
 == Copyright ==
 
-Celestial FSE Theme WordPress Theme, (C) 2025 dreamersofday
+Celestial FSE Theme WordPress Theme, (C) 2025 valeravilks
 Celestial FSE Theme is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
