@@ -2,7 +2,7 @@
   "name": "valeravilks/celestial",
   "autoload": {
     "psr-4": {
-      "ValeraVilks\\Celestial\\": "core-plugin/modules"
+      "ValeraVilks\\Celestial\\": "src/core-plugin/modules"
     }
   },
   "authors": [
@@ -13,6 +13,6 @@
   ],
   "require": {},
   "config": {
-    "vendor-dir": "core-plugin/vendor"
+    "vendor-dir": "src/core-plugin/vendor"
   }
 }
