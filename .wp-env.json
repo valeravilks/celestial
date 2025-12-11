@@ -1,7 +1,6 @@
 {
     "core": "WordPress/Wordpress#6.9",
 	"plugins": [
-		"./src/core-plugin",
         "./src/blocks-plugin"
 	],
 	"themes": [ "./src/theme" ]
