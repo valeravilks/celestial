@@ -267,6 +267,13 @@
 			"fontFamily": "var(--wp--preset--font-family--roboto)",
 			"fontSize": "var(--wp--preset--font-size--medium)",
 			"lineHeight": "1.6"
+		},
+		"blocks": {
+			"core/button": {
+				"color": {
+					"background": "var:preset|color|primary"
+				}
+			}
 		}
 	},
 	"templateParts": [
