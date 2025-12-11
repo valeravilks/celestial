@@ -44,7 +44,7 @@
 			"link": false,
 			"palette": [
 				{
-					"color": "#0000FF",
+					"color": "#009F73",
 					"name": "Primary",
 					"slug": "primary"
 				},
@@ -59,7 +59,7 @@
 					"slug": "accent"
 				},
 				{
-					"color": "#000000",
+					"color": "#242628",
 					"name": "Black",
 					"slug": "black"
 				},
