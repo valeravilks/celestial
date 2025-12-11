@@ -25,6 +25,12 @@
 				"shadow": {
 					"defaultPresets": false
 				}
+			},
+			"core/buttons": {
+				"typography": {
+					"fontFamilies": [],
+					"fontSizes": []
+				}
 			}
 		},
 		"color": {
