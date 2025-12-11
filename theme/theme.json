@@ -13,6 +13,18 @@
 					"fontFamilies": [],
 					"fontSizes": []
 				}
+			},
+			"core/button": {
+				"typography": {
+					"fontFamilies": [],
+					"fontSizes": []
+				},
+				"border": {
+					"radius": false
+				},
+				"shadow": {
+					"defaultPresets": false
+				}
 			}
 		},
 		"color": {
