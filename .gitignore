@@ -1,7 +1,10 @@
 .idea
-/node_modules/
+.DS_Store
+*.log
 
-src/core-plugin/vendor/
+node_modules/
 
-src/core-plugin/**/build
-src/blocks-plugin/**/build
+celestial-core/vendor/
+
+celestial-core/**/build/
+celestial-blocks/**/build/
