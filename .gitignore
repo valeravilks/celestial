@@ -1,7 +1,8 @@
 .idea
-/node_modules/
+
+node_modules/
 
 celestial-core/vendor/
 
-celestail-core/**/build
-celestial-blocks/**/build
+celestial-core/**/build/
+celestial-blocks/**/build/
