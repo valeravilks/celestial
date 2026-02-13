@@ -2,6 +2,27 @@
 
 All notable changes to the Celestial FSE Starterkit will be documented in this file.
 
+## [0.7.0] - 2026-02-13
+
+### Added
+
+- Documentation for creating and managing custom blocks in `cel-blocks`.
+
+### Changed
+
+- Reorganized the project structure into `cel-theme`, `cel-blocks`, and `cel-editor`, and updated local env paths accordingly.
+- Renamed block prefixes from `celestial` to `cel`.
+- Added `--experimental-modules` to the blocks build and start scripts.
+- Reorganized `cel-theme` directories and added new patterns.
+
+### Removed
+
+- CircleCI configuration and related README section.
+
+### Chores
+
+- Removed an unused `@wordpress/i18n` import from `smart-header` editor code.
+
 ## [0.6.0] - 2025-12-11
 
 Note: Release 1.0.0 was withdrawn and replaced by 0.6.0. No public consumers were affected.

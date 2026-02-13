@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Celestial Editor
  * Description: Editor enhancements (block variations, filters, editor plugins).
- * Version: 0.1.0
+ * Version: 0.7.0
  * Author: Valera Vilks
  */
 
