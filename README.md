@@ -225,6 +225,17 @@ No business logic lives inside the theme.
 
 ---
 
+# Documentation
+
+
+## Design System
+- [Color Management](docs/design-system.colors.md)
+- [Typography](docs/design-system.typography.md)
+- [Spacing](docs/design-system.spacing.md)
+
+See the [`docs`](docs) directory for full development guides.
+---
+
 # Contributing
 
 When adding new functionality:
