@@ -38,7 +38,7 @@ const App = () => {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
-	const reactAppBlocks = document.querySelectorAll('.wp-block-celestial-react-app');
+	const reactAppBlocks = document.querySelectorAll('.wp-block-cel-react-app');
 
 	reactAppBlocks.forEach(block => {
 		const root = createRoot(block);

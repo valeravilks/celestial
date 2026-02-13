@@ -21,7 +21,7 @@
  */
 
 (() => {
-	const btn = document.querySelector('.wp-block-celestial-scroll-to-top');
+	const btn = document.querySelector('.wp-block-cel-scroll-to-top');
 	if (!btn) return;
 
 	function toggle() {

@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "celestial/scroll-to-top",
+	"name": "cel/scroll-to-top",
 	"version": "0.1.0",
 	"title": "Scroll To Top",
 	"category": "widgets",
