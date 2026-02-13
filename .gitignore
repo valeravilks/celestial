@@ -4,7 +4,7 @@
 
 node_modules/
 
-celestial-core/vendor/
+cel-core/vendor/
 
-celestial-core/**/build/
-celestial-blocks/**/build/
+cel-core/**/build/
+cel-blocks/**/build/
