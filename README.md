@@ -68,6 +68,9 @@ Contains custom blocks created using:
 
 Each block lives inside this plugin and is compiled via npm.
 
+All new blocks must be added only in `cel-blocks/src` using the official `@wordpress/create-block` tool.
+If a block needs additional npm packages, add them to `cel-blocks/package.json`.
+
 ### Responsibilities
 
 * Register blocks
@@ -232,6 +235,7 @@ No business logic lives inside the theme.
 - [Color Management](docs/design-system.colors.md)
 - [Typography](docs/design-system.typography.md)
 - [Spacing](docs/design-system.spacing.md)
+- [Custom Blocks](docs/custom-blocks.md)
 
 See the [`docs`](docs) directory for full development guides.
 ---
