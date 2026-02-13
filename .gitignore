@@ -1,7 +1,10 @@
 .idea
-/node_modules/
+.DS_Store
+*.log
 
-src/core-plugin/vendor/
+node_modules/
 
-src/core-plugin/**/build
-src/blocks-plugin/**/build
+cel-core/vendor/
+
+cel-core/**/build/
+cel-blocks/**/build/

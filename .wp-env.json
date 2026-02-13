@@ -1,8 +1,9 @@
 {
-    "core": "WordPress/Wordpress#6.9",
+    "core": "WordPress/WordPress#6.9",
 	"plugins": [
-		"./src/core-plugin",
-        "./src/blocks-plugin"
+		"./cel-core",
+        "./cel-blocks",
+        "./cel-editor"
 	],
-	"themes": [ "./src/theme" ]
+	"themes": [ "./cel-theme" ]
 }
