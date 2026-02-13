@@ -1,9 +1,9 @@
 {
     "core": "WordPress/WordPress#6.9",
 	"plugins": [
-		"./celestial-core",
-        "./celestial-blocks",
-        "./celestial-editor"
+		"./cel-core",
+        "./cel-blocks",
+        "./cel-editor"
 	],
-	"themes": [ "./celestial-theme" ]
+	"themes": [ "./cel-theme" ]
 }
