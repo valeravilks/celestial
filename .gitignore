@@ -8,3 +8,5 @@ cel-core/vendor/
 
 cel-core/**/build/
 cel-blocks/**/build/
+
+/vendor/
