@@ -1,0 +1,21 @@
+{
+    "name": "valeravilks/celestial",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "ValeraVilks\\Celestial\\": "cel-core/modules/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Valera Vilks",
+            "email": "valeravilks@gmail.com"
+        }
+    ],
+    "require": {},
+    "config": {
+        "vendor-dir": "cel-core/vendor",
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
