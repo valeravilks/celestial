@@ -1,9 +1,5 @@
 {
     "core": "WordPress/WordPress#6.9",
-	"plugins": [
-		"./cel-core",
-        "./cel-blocks",
-        "./cel-editor"
-	],
+	"plugins": [ "./cel-core" ],
 	"themes": [ "./cel-theme" ]
 }
