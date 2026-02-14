@@ -3,8 +3,8 @@
   "version": "0.7.0",
   "description": "A modular WordPress Full Site Editing (FSE) starter kit built according to official WordPress architecture principles.",
   "scripts": {
-    "start:block": "wp-scripts start ",
-    "build:block": "wp-scripts build core-plugin/editor/index.js --output-path=core-plugin/editor/build",
+    "start:block": "wp-scripts start --source-path=cel-core/blocks --output-path=cel-core/build/blocks --blocks-manifest --experimental-modules",
+    "build:block": "wp-scripts build --source-path=cel-core/blocks --output-path=cel-core/build/blocks --blocks-manifest --experimental-modules",
     "start:editor": "wp-scripts start cel-core/editor/index.js --output-path=cel-core/build/editor",
     "build:editor": "wp-scripts build cel-core/editor/index.js --output-path=cel-core/build/editor",
     "build": "run-p build:*",
