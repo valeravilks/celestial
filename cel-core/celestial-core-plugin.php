@@ -5,8 +5,8 @@
  * Description: This plugin contains all the core functionality required for the starter kit to work properly
  */
 
-if (!defined('ABSPATH')) {
-    exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
 }
 
 $autoload = __DIR__ . '/vendor/autoload.php';
@@ -18,26 +18,29 @@ use ValeraVilks\Celestial\LandingPages\LandingPages;
 
 LandingPages::init();
 
-add_action('enqueue_block_editor_assets', function () {
-	$build_dir = __DIR__ . '/build/editor/';
+add_action(
+	'enqueue_block_editor_assets',
+	function () {
+		$build_dir = __DIR__ . '/build/editor/';
 
-	if (
-		! file_exists($build_dir . '/index.js') ||
-		! file_exists($build_dir . '/index.asset.php')
-	) {
-		return;
+		if (
+		! file_exists( $build_dir . '/index.js' ) ||
+		! file_exists( $build_dir . '/index.asset.php' )
+		) {
+			return;
+		}
+
+		$asset = require $build_dir . '/index.asset.php';
+
+		wp_enqueue_script(
+			'celestial-editor',
+			plugins_url( 'build/editor/index.js', __FILE__ ),
+			$asset['dependencies'],
+			$asset['version'],
+			true
+		);
 	}
-
-	$asset = require $build_dir . '/index.asset.php';
-
-	wp_enqueue_script(
-		'celestial-editor',
-		plugins_url('build/editor/index.js', __FILE__),
-		$asset['dependencies'],
-		$asset['version'],
-		true
-	);
-});
+);
 
 /**
  * Registers the block using a `blocks-manifest.php` file, which improves the performance of block type registration.
