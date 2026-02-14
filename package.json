@@ -1,0 +1,12 @@
+{
+  "name": "celestial",
+  "version": "0.7.0",
+  "description": "A modular WordPress Full Site Editing (FSE) starter kit built according to official WordPress architecture principles.",
+  "scripts": {
+    "start": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^10.39.0",
+    "@wordpress/scripts": "^31.4.0"
+  }
+}
