@@ -6,8 +6,9 @@
         Focused on safety and consistency without excessive strictness.
     </description>
 
-    <!-- Use the base WordPress standard -->
-    <rule ref="WordPress" />
+    <!-- Use strict WordPress standards -->
+    <rule ref="WordPress-Extra" />
+    <rule ref="WordPress-Docs" />
 
     <!-- Only check PHP files -->
     <arg name="extensions" value="php"/>

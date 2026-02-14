@@ -2,9 +2,9 @@
     "name": "valeravilks/celestial",
     "type": "project",
     "autoload": {
-        "psr-4": {
-            "ValeraVilks\\Celestial\\": "cel-core/modules/"
-        }
+        "classmap": [
+            "cel-core/modules/"
+        ]
     },
     "authors": [
         {
