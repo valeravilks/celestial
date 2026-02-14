@@ -1,12 +1,30 @@
 <?php
+/**
+ * Landing page custom post type registration.
+ *
+ * @package Celestial
+ */
 
 namespace ValeraVilks\Celestial\LandingPages;
 
+/**
+ * Handles registration of the landing page CPT.
+ */
 class CPT {
+	/**
+	 * Hooks CPT registration.
+	 *
+	 * @return void
+	 */
 	public static function init() {
 		add_action( 'init', array( self::class, 'register' ) );
 	}
 
+	/**
+	 * Registers the landing page custom post type.
+	 *
+	 * @return void
+	 */
 	public static function register() {
 		register_post_type(
 			'landing-page',

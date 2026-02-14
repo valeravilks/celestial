@@ -1,12 +1,30 @@
 <?php
+/**
+ * Landing page meta fields.
+ *
+ * @package Celestial
+ */
 
 namespace ValeraVilks\Celestial\LandingPages;
 
+/**
+ * Registers landing page meta fields.
+ */
 class Meta {
+	/**
+	 * Hooks meta registration.
+	 *
+	 * @return void
+	 */
 	public static function init() {
 		add_action( 'init', array( self::class, 'register' ) );
 	}
 
+	/**
+	 * Registers landing page meta fields.
+	 *
+	 * @return void
+	 */
 	public static function register() {
 		register_post_meta(
 			'landing-page',
