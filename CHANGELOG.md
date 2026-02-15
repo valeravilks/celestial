@@ -2,6 +2,16 @@
 
 All notable changes to the Celestial FSE Starterkit will be documented in this file.
 
+## [Unreleased]
+
+### Changed
+
+- Simplified README to describe the repo as a toolkit without prescribing a methodology.
+
+### Removed
+
+- Removed local `docs/` guides (to be maintained separately).
+
 ## [0.7.0] - 2026-02-13
 
 ### Added
