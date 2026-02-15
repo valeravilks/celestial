@@ -8,6 +8,9 @@
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
     },
+    "require": {
+        "php": ">=8.2"
+    },
     "require-dev": {
         "wp-coding-standards/wpcs": "^3.3"
     },
