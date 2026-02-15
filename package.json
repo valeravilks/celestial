@@ -2,6 +2,10 @@
 	"name": "celestial",
 	"version": "0.7.0",
 	"description": "A modular WordPress Full Site Editing (FSE) starter kit built according to official WordPress architecture principles.",
+	"engines": {
+		"node": "^24.0.0"
+	},
+	"engineStrict": true,
 	"scripts": {
 		"start:block": "wp-scripts start --source-path=cel-core/blocks --output-path=cel-core/build/blocks --blocks-manifest --experimental-modules",
 		"start:editor": "wp-scripts start cel-core/editor/index.js --output-path=cel-core/build/editor",
