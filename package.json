@@ -13,7 +13,6 @@
 		"lint:js:fix": "wp-scripts lint-js cel-core/blocks cel-core/editor --fix",
 		"lint:style": "wp-scripts lint-style cel-core/blocks/**/*.{css,scss,sass} cel-core/editor/**/*.{css,scss,sass} cel-theme/**/*.{css,scss,sass}",
 		"lint:style:fix": "wp-scripts lint-style cel-core/blocks/**/*.{css,scss,sass} cel-core/editor/**/*.{css,scss,sass} cel-theme/**/*.{css,scss,sass} --fix",
-		"lint:style:theme": "wp-scripts lint-style 'cel-theme/**/*.{css,scss,sass}'",
 		"wp-env": "wp-env"
 	},
 	"devDependencies": {
