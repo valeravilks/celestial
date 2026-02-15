@@ -15,9 +15,9 @@ if ( file_exists( $autoload ) ) {
 	require_once $autoload;
 }
 
-use ValeraVilks\Celestial\LandingPages\LandingPages;
+use ValeraVilks\Celestial\Modules;
 
-LandingPages::init();
+Modules::init();
 
 add_action(
 	'enqueue_block_editor_assets',
