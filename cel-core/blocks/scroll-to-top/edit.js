@@ -6,7 +6,8 @@
  */
 import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
 import { Tip, PanelBody, ToggleControl } from '@wordpress/components';
-import { useState } from '@wordpress/element';
+// import { useState } from '@wordpress/element';
+const {useState} = wp.element;
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
