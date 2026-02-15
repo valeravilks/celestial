@@ -8,7 +8,8 @@
     "start:editor": "wp-scripts start cel-core/editor/index.js --output-path=cel-core/build/editor",
     "build:editor": "wp-scripts build cel-core/editor/index.js --output-path=cel-core/build/editor",
     "build": "run-p build:*",
-    "start": "run-p start:*"
+    "start": "run-p start:*",
+    "wp-env": "wp-env"
   },
   "devDependencies": {
     "@wordpress/env": "^10.39.0",
