@@ -1,19 +1,7 @@
 {
     "name": "valeravilks/celestial",
     "type": "project",
-    "autoload": {
-        "classmap": [
-            "cel-core/modules/"
-        ]
-    },
-    "authors": [
-        {
-            "name": "Valera Vilks",
-            "email": "valeravilks@gmail.com"
-        }
-    ],
     "config": {
-        "vendor-dir": "cel-core/vendor",
         "optimize-autoloader": true,
         "sort-packages": true,
         "allow-plugins": {
@@ -22,5 +10,11 @@
     },
     "require-dev": {
         "wp-coding-standards/wpcs": "^3.3"
+    },
+    "scripts": {
+        "lint": "vendor/bin/phpcs ./cel-core",
+        "fix": "vendor/bin/phpcbf ./cel-core",
+        "post-install-cmd": "composer install --working-dir=./cel-core",
+        "post-autoload-dump": "composer dump-autoload --working-dir=./cel-core"
     }
 }
