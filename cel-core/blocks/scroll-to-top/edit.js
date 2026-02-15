@@ -4,9 +4,9 @@
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import {useBlockProps, InspectorControls} from '@wordpress/block-editor';
-import {Tip, PanelBody, ToggleControl} from "@wordpress/components";
-import {useState} from "@wordpress/element";
+import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
+import { Tip, PanelBody, ToggleControl } from '@wordpress/components';
+import { useState } from '@wordpress/element';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -15,33 +15,33 @@ import {useState} from "@wordpress/element";
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
 import './editor.scss';
-import {Icon} from "./icon";
+import { Icon } from './icon';
 
 export default function Edit() {
-	const [showComponent, setShowComponent] = useState(true);
+	const [ showComponent, setShowComponent ] = useState( true );
 	const blockProps = useBlockProps();
 
 	return (
 		<>
-
-			{showComponent && (
+			{ showComponent && (
 				<>
-					<button {...blockProps}>
-						<Icon/>
+					<button { ...blockProps }>
+						<Icon />
 					</button>
 					<Tip>
-						This is an example element. The actual behavior of the block can be seen on the page.
+						This is an example element. The actual behavior of the
+						block can be seen on the page.
 					</Tip>
 				</>
-			)}
+			) }
 
 			<InspectorControls>
 				<PanelBody>
 					<ToggleControl
 						__nextHasNoMarginBottom
-						checked={showComponent}
+						checked={ showComponent }
 						label="Show component"
-						onChange={() => setShowComponent(!showComponent)}
+						onChange={ () => setShowComponent( ! showComponent ) }
 					/>
 				</PanelBody>
 			</InspectorControls>

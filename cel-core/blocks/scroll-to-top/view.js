@@ -20,17 +20,19 @@
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script
  */
 
-(() => {
-	const btn = document.querySelector('.wp-block-cel-scroll-to-top');
-	if (!btn) return;
-
-	function toggle() {
-		btn.classList.toggle('active', window.scrollY > 200);
+( () => {
+	const btn = document.querySelector( '.wp-block-cel-scroll-to-top' );
+	if ( ! btn ) {
+		return;
 	}
 
-	window.addEventListener('scroll', toggle);
-	btn.addEventListener('click', e => {
+	function toggle() {
+		btn.classList.toggle( 'active', window.scrollY > 200 );
+	}
+
+	window.addEventListener( 'scroll', toggle );
+	btn.addEventListener( 'click', ( e ) => {
 		e.preventDefault();
-		window.scrollTo({ top: 0, behavior: 'smooth' });
-	});
-})();
+		window.scrollTo( { top: 0, behavior: 'smooth' } );
+	} );
+} )();
