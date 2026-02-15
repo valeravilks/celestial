@@ -2,15 +2,22 @@
   "name": "celestial",
   "version": "0.7.0",
   "description": "A modular WordPress Full Site Editing (FSE) starter kit built according to official WordPress architecture principles.",
-  "scripts": {
+	"scripts": {
     "start:block": "wp-scripts start --source-path=cel-core/blocks --output-path=cel-core/build/blocks --blocks-manifest --experimental-modules",
     "build:block": "wp-scripts build --source-path=cel-core/blocks --output-path=cel-core/build/blocks --blocks-manifest --experimental-modules",
-    "start:editor": "wp-scripts start cel-core/editor/index.js --output-path=cel-core/build/editor",
+  	"lint:js:block": "wp-scripts lint-js cel-core/blocks",
+  	"start:editor": "wp-scripts start cel-core/editor/index.js --output-path=cel-core/build/editor",
     "build:editor": "wp-scripts build cel-core/editor/index.js --output-path=cel-core/build/editor",
-    "build": "run-p build:*",
+  	"lint:js:editor": "wp-scripts lint-js cel-core/editor",
+  	"build": "run-p build:*",
     "start": "run-p start:*",
-    "wp-env": "wp-env"
-  },
+		"lint:js": "run-p lint:js:*",
+		"lint:style:block": "wp-scripts lint-style 'cel-core/blocks/**/*.{css,scss,sass}'",
+		"lint:style:theme": "wp-scripts lint-style 'cel-theme/**/*.{css,scss,sass}'",
+		"lint:style": "run-p lint:style:*",
+		"lint": "run-p lint:js lint:style",
+		"wp-env": "wp-env"
+	},
   "devDependencies": {
     "@wordpress/env": "^10.39.0",
     "@wordpress/scripts": "^31.4.0",
