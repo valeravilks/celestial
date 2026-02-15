@@ -1,12 +1,7 @@
 .idea
 .DS_Store
 *.log
-
-node_modules/
-
-cel-core/vendor/
-
-cel-core/**/build/
-cel-blocks/**/build/
-
 /vendor/
+/node_modules/
+/cel-core/build/
+/cel-core/vendor/
