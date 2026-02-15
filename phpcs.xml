@@ -9,6 +9,11 @@
     <!-- Use strict WordPress standards -->
     <rule ref="WordPress-Extra" />
     <rule ref="WordPress-Docs" />
+    <!-- Disable filename rules for class files and lowercase hyphenation -->
+    <rule ref="WordPress.Files.FileName">
+        <exclude name="WordPress.Files.FileName.InvalidClassFileName" />
+        <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
+    </rule>
 
     <!-- Only check PHP files -->
     <arg name="extensions" value="php"/>
