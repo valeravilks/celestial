@@ -11,12 +11,12 @@
   	"lint:js:editor": "wp-scripts lint-js cel-core/editor",
   	"build": "run-p build:*",
     "start": "run-p start:*",
-		"lint:js": "run-p lint:js:*",
-		"lint:style:block": "wp-scripts lint-style 'cel-core/blocks/**/*.{css,scss,sass}'",
-		"lint:style:theme": "wp-scripts lint-style 'cel-theme/**/*.{css,scss,sass}'",
-		"lint:style": "run-p lint:style:*",
-		"lint": "run-p lint:js lint:style",
-		"wp-env": "wp-env"
+	"lint:js": "run-p lint:js:*",
+	"lint:style:block": "wp-scripts lint-style 'cel-core/blocks/**/*.{css,scss,sass}'",
+	"lint:style:theme": "wp-scripts lint-style 'cel-theme/**/*.{css,scss,sass}'",
+	"lint:style": "run-p lint:style:*",
+	"lint": "run-p lint:js lint:style",
+	"wp-env": "wp-env"
 	},
   "devDependencies": {
     "@wordpress/env": "^10.39.0",
