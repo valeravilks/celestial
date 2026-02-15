@@ -14,7 +14,6 @@
 		"lint:style": "wp-scripts lint-style cel-core/blocks/**/*.{css,scss,sass} cel-core/editor/**/*.{css,scss,sass} cel-theme/**/*.{css,scss,sass}",
 		"lint:style:fix": "wp-scripts lint-style cel-core/blocks/**/*.{css,scss,sass} cel-core/editor/**/*.{css,scss,sass} cel-theme/**/*.{css,scss,sass} --fix",
 		"lint:style:theme": "wp-scripts lint-style 'cel-theme/**/*.{css,scss,sass}'",
-		"lint": "run-p lint:js lint:style",
 		"wp-env": "wp-env"
 	},
 	"devDependencies": {
