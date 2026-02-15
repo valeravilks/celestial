@@ -1,25 +1,25 @@
 {
-  "name": "celestial",
-  "version": "0.7.0",
-  "description": "A modular WordPress Full Site Editing (FSE) starter kit built according to official WordPress architecture principles.",
+	"name": "celestial",
+	"version": "0.7.0",
+	"description": "A modular WordPress Full Site Editing (FSE) starter kit built according to official WordPress architecture principles.",
 	"scripts": {
-    "start:block": "wp-scripts start --source-path=cel-core/blocks --output-path=cel-core/build/blocks --blocks-manifest --experimental-modules",
-    "build:block": "wp-scripts build --source-path=cel-core/blocks --output-path=cel-core/build/blocks --blocks-manifest --experimental-modules",
-  	"start:editor": "wp-scripts start cel-core/editor/index.js --output-path=cel-core/build/editor",
-    "build:editor": "wp-scripts build cel-core/editor/index.js --output-path=cel-core/build/editor",
-  	"build": "run-p build:*",
-    "start": "run-p start:*",
-	"lint:js": "wp-scripts lint-js cel-core/blocks cel-core/editor",
-	"lint:js:fix": "wp-scripts lint-js cel-core/blocks cel-core/editor --fix",
-	"lint:style": "wp-scripts lint-style cel-core/blocks/**/*.{css,scss,sass} cel-core/editor/**/*.{css,scss,sass} cel-theme/**/*.{css,scss,sass}",
-	"lint:style:fix": "wp-scripts lint-style cel-core/blocks/**/*.{css,scss,sass} cel-core/editor/**/*.{css,scss,sass} cel-theme/**/*.{css,scss,sass} --fix",
-	"lint:style:theme": "wp-scripts lint-style 'cel-theme/**/*.{css,scss,sass}'",
-	"lint": "run-p lint:js lint:style",
-	"wp-env": "wp-env"
+		"start:block": "wp-scripts start --source-path=cel-core/blocks --output-path=cel-core/build/blocks --blocks-manifest --experimental-modules",
+		"start:editor": "wp-scripts start cel-core/editor/index.js --output-path=cel-core/build/editor",
+		"start": "run-p start:*",
+		"build:block": "wp-scripts build --source-path=cel-core/blocks --output-path=cel-core/build/blocks --blocks-manifest --experimental-modules",
+		"build:editor": "wp-scripts build cel-core/editor/index.js --output-path=cel-core/build/editor",
+		"build": "run-p build:*",
+		"lint:js": "wp-scripts lint-js cel-core/blocks cel-core/editor",
+		"lint:js:fix": "wp-scripts lint-js cel-core/blocks cel-core/editor --fix",
+		"lint:style": "wp-scripts lint-style cel-core/blocks/**/*.{css,scss,sass} cel-core/editor/**/*.{css,scss,sass} cel-theme/**/*.{css,scss,sass}",
+		"lint:style:fix": "wp-scripts lint-style cel-core/blocks/**/*.{css,scss,sass} cel-core/editor/**/*.{css,scss,sass} cel-theme/**/*.{css,scss,sass} --fix",
+		"lint:style:theme": "wp-scripts lint-style 'cel-theme/**/*.{css,scss,sass}'",
+		"lint": "run-p lint:js lint:style",
+		"wp-env": "wp-env"
 	},
-  "devDependencies": {
-    "@wordpress/env": "^10.39.0",
-    "@wordpress/scripts": "^31.4.0",
-    "npm-run-all": "^4.1.5"
-  }
+	"devDependencies": {
+		"@wordpress/env": "^10.39.0",
+		"@wordpress/scripts": "^31.4.0",
+		"npm-run-all": "^4.1.5"
+	}
 }
