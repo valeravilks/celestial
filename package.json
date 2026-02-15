@@ -23,5 +23,8 @@
 		"@wordpress/env": "^10.39.0",
 		"@wordpress/scripts": "^31.4.0",
 		"npm-run-all": "^4.1.5"
+	},
+	"dependencies": {
+		"@types/wordpress__block-editor": "^15.0.0"
 	}
 }
