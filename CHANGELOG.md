@@ -4,13 +4,22 @@ All notable changes to the Celestial FSE Starterkit will be documented in this f
 
 ## [Unreleased]
 
+## [0.8.0] - 2026-02-17
+
 ### Changed
 
 - Simplified README to describe the repo as a toolkit without prescribing a methodology.
+- Aligned `useState` imports for the `scroll-to-top` block for consistency.
+- Refreshed dependency metadata and lockfile flags for current tooling.
+- Clarified structure separation between the core plugin and the theme.
 
 ### Removed
 
 - Removed local `docs/` guides (to be maintained separately).
+
+### Chores
+
+- Updated the dependency set and cleaned `package-lock.json` entries.
 
 ## [0.7.0] - 2026-02-13
 
