@@ -41,7 +41,7 @@ This project uses `wp-env` for local development.
 ## 1. Start WordPress environment
 
 ```
-npm run wp:start
+wp-env start
 ```
 
 WordPress will be available at:
@@ -49,15 +49,6 @@ WordPress will be available at:
 * URL: [http://localhost:8888](http://localhost:8888)
 * Username: admin
 * Password: password
-
-To stop or destroy the environment:
-
-```
-npm run wp:stop
-npm run wp:destroy
-```
-
-These scripts set `COMPOSE_PROJECT_NAME` based on the `name` in `package.json`, so the Docker Compose project name matches the repo package name.
 
 ---
 

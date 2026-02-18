@@ -17,9 +17,7 @@
 		"lint:js:fix": "wp-scripts lint-js cel-core/blocks cel-core/editor --fix",
 		"lint:style": "wp-scripts lint-style cel-core/blocks/**/*.{css,scss,sass} cel-core/editor/**/*.{css,scss,sass} cel-theme/**/*.{css,scss,sass}",
 		"lint:style:fix": "wp-scripts lint-style cel-core/blocks/**/*.{css,scss,sass} cel-core/editor/**/*.{css,scss,sass} cel-theme/**/*.{css,scss,sass} --fix",
-		"wp:start": "COMPOSE_PROJECT_NAME=$npm_package_name wp-env start",
-		"wp:stop": "COMPOSE_PROJECT_NAME=$npm_package_name wp-env stop",
-		"wp:destroy": "COMPOSE_PROJECT_NAME=$npm_package_name wp-env destroy"
+		"wp-env": "wp-env"
 	},
 	"devDependencies": {
 		"@wordpress/env": "^10.39.0",
