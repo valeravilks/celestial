@@ -5,7 +5,6 @@
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
 import { useBlockProps } from '@wordpress/block-editor';
-import { Icon } from './icon';
 
 /**
  * The save function defines the way in which the different attributes should
@@ -18,8 +17,8 @@ import { Icon } from './icon';
  */
 export default function save() {
 	return (
-		<button { ...useBlockProps.save() }>
-			<Icon />
-		</button>
+		<p { ...useBlockProps.save() }>
+			{ 'Example Static – hello from the saved content!' }
+		</p>
 	);
 }

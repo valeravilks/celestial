@@ -1,13 +1,17 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "cel/scroll-to-top",
-	"version": "0.7.0",
-	"title": "Scroll To Top",
+	"name": "cel/example-static",
+	"version": "0.1.0",
+	"title": "Example Static",
 	"category": "widgets",
 	"icon": "smiley",
-	"description": "A dynamic button component that appears when scrolling and smoothly returns users to the top of the page when clicked.",
-	"textdomain": "scroll-to-top",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "celestial",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",
