@@ -1,7 +1,0 @@
-export function Icon() {
-	return (
-		<svg role="presentation" width="24" height="24" viewBox="0 0 24 24">
-			<path d="M17.657 15.657a1 1 0 0 1-.707-.293L12 10.414l-4.95 4.95a1 1 0 0 1-1.414-1.414l5.657-5.657a1 1 0 0 1 1.414 0l5.657 5.657a1 1 0 0 1-.707 1.707z"></path>
-		</svg>
-	);
-}
