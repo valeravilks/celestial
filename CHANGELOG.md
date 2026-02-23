@@ -4,6 +4,17 @@ All notable changes to the Celestial FSE Starterkit will be documented in this f
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-02-23
+
+### Release
+
+- Promoted the starter kit to the first stable 1.0.0 release.
+- Verified local build (`npm run build`) and runtime startup (`wp-env start`).
+
+### Changed
+
+- Bumped version metadata across the root package, core plugin, and theme.
+
 ## [0.8.0] - 2026-02-17
 
 ### Changed

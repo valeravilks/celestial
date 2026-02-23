@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Celestial Core Plugin
  * Description: This plugin contains all the core functionality required for the starter kit to work properly
- * Version: 0.8.0
+ * Version: 1.0.0
  *
  * @package Celestial
  */

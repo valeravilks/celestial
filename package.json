@@ -1,6 +1,6 @@
 {
 	"name": "celestial",
-	"version": "0.8.0",
+	"version": "1.0.0",
 	"description": "A modular WordPress Full Site Editing (FSE) starter kit built according to official WordPress architecture principles.",
 	"engines": {
 		"node": "^24.0.0"
