@@ -16,7 +16,7 @@ class CPT {
 	 *
 	 * @return void
 	 */
-	public static function init() {
+	public static function init(): void {
 		add_action( 'init', array( self::class, 'register' ) );
 	}
 
@@ -25,7 +25,7 @@ class CPT {
 	 *
 	 * @return void
 	 */
-	public static function register() {
+	public static function register(): void {
 		register_post_type(
 			'landing-page',
 			array(

@@ -18,7 +18,7 @@ class Modules {
 	 *
 	 * @return void
 	 */
-	public static function init() {
+	public static function init(): void {
 		LandingPages::init();
 	}
 }
