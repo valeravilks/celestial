@@ -1,5 +1,6 @@
 {
     "core": "WordPress/WordPress#6.9",
 	"plugins": [ "./cel-core" ],
-	"themes": [ "./cel-theme" ]
+	"themes": [ "./cel-theme" ],
+	"testsEnvironment": false
 }
