@@ -5,9 +5,9 @@ Celestial should stay close to a normal WordPress project.
 ## Runtime
 
 - `wp-content/themes/celestial/` is the theme and owns presentation: `theme.json`, templates, parts, patterns, and theme assets.
-- `wp-content/plugins/celestial-core/` is the plugin and owns functionality: PHP modules, CPTs, meta, custom blocks, and editor assets.
+- `wp-content/plugins/celestial-core/` is the plugin and owns functionality: PHP features, CPTs, meta, custom blocks, and editor assets.
 - The theme should remain dependency-free unless a real theme build step becomes necessary.
-- Plugin PHP should stay simple and readable. Use explicit includes unless dependencies justify Composer.
+- Plugin PHP should stay simple and readable. Use explicit includes and prefixed functions unless dependencies justify Composer.
 
 ## Editor And Design
 

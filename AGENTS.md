@@ -26,11 +26,11 @@ From `wp-content/plugins/celestial-core/`:
 ## Conventions
 
 - Keep theme presentation in `wp-content/themes/celestial/`.
-- Keep PHP modules, custom post types, blocks, and editor assets in `wp-content/plugins/celestial-core/`.
+- Keep PHP features, custom post types, blocks, and editor assets in `wp-content/plugins/celestial-core/`.
 - Do not add Composer or PHPCS unless a task explicitly asks for them.
 - `wp-env` is expected to be installed globally, not as a plugin dependency.
 - Treat `wp-content/plugins/celestial-core/build/` and `node_modules/` as generated output.
-- Prefer simple explicit PHP includes for small plugin modules.
+- Prefer simple explicit PHP includes and prefixed functions for small plugin features.
 
 ## Verification
 
