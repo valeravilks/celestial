@@ -8,6 +8,20 @@ Celestial should stay close to a normal WordPress project.
 - `wp-content/plugins/celestial-core/` is the plugin and owns functionality: PHP features, CPTs, meta, custom blocks, and editor assets.
 - The theme should remain dependency-free unless a real theme build step becomes necessary.
 - Plugin PHP should stay simple and readable. Use explicit includes and prefixed functions unless dependencies justify Composer.
+- Feature code should live in folders under `wp-content/plugins/celestial-core/includes/`.
+- Each feature folder can start with an `index.php` of hook callbacks and later add classes if the feature becomes complex.
+
+Example:
+
+```text
+includes/
+  landing-pages/
+    index.php
+  complex-feature/
+    index.php
+    class-service.php
+    interface-provider.php
+```
 
 ## Editor And Design
 

@@ -30,7 +30,9 @@ From `wp-content/plugins/celestial-core/`:
 - Do not add Composer or PHPCS unless a task explicitly asks for them.
 - `wp-env` is expected to be installed globally, not as a plugin dependency.
 - Treat `wp-content/plugins/celestial-core/build/` and `node_modules/` as generated output.
-- Prefer simple explicit PHP includes and prefixed functions for small plugin features.
+- Plugin features live in `wp-content/plugins/celestial-core/includes/<feature>/index.php`.
+- Prefer WordPress hooks plus global functions prefixed with `celestial_core_`.
+- Do not add classes just to group hooks; add OOP inside a feature folder only when complexity justifies it.
 
 ## Verification
 
