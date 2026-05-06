@@ -1,5 +1,8 @@
 {
 	"settings": {
+		"position": {
+			"sticky": true
+		},
 		"appearanceTools": false,
 		"blocks": {
 			"core/heading": {
@@ -21,9 +24,6 @@
 				},
 				"border": {
 					"radius": false
-				},
-				"shadow": {
-					"defaultPresets": false
 				}
 			},
 			"core/buttons": {
