@@ -11,10 +11,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$autoload = __DIR__ . '/vendor/autoload.php';
-if ( file_exists( $autoload ) ) {
-	require_once $autoload;
-}
+require_once __DIR__ . '/modules/LandingPages/CPT.php';
+require_once __DIR__ . '/modules/LandingPages/Meta.php';
+require_once __DIR__ . '/modules/LandingPages/LandingPages.php';
+require_once __DIR__ . '/modules/Modules.php';
 
 use ValeraVilks\Celestial\Modules;
 
@@ -57,16 +57,22 @@ add_action(
 add_action(
 	'init',
 	function () {
+		$manifest = __DIR__ . '/build/blocks/blocks-manifest.php';
+
+		if ( ! file_exists( $manifest ) ) {
+			return;
+		}
+
 		if ( function_exists( 'wp_register_block_types_from_metadata_collection' ) ) {
-			wp_register_block_types_from_metadata_collection( __DIR__ . '/build/blocks', __DIR__ . '/build/blocks/blocks-manifest.php' );
+			wp_register_block_types_from_metadata_collection( __DIR__ . '/build/blocks', $manifest );
 			return;
 		}
 
 		if ( function_exists( 'wp_register_block_metadata_collection' ) ) {
-			wp_register_block_metadata_collection( __DIR__ . '/build/blocks', __DIR__ . '/build/blocks/blocks-manifest.php' );
+			wp_register_block_metadata_collection( __DIR__ . '/build/blocks', $manifest );
 		}
 
-		$manifest_data = require __DIR__ . '/build/blocks/blocks-manifest.php';
+		$manifest_data = require $manifest;
 		foreach ( array_keys( $manifest_data ) as $block_type ) {
 			register_block_type( __DIR__ . "/build/blocks/{$block_type}" );
 		}

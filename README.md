@@ -1,89 +1,59 @@
-# Celestial FSE Starter Kit
+# Celestial
 
-A modular WordPress Full Site Editing (FSE) starter kit built with official WordPress tooling. This repository is a toolkit: it provides a clean baseline and working build/dev setup without prescribing a single methodology.
+A small WordPress Full Site Editing starter kit shaped like a normal `wp-content` project.
 
----
+## Structure
 
-## Overview
-
-Celestial separates concerns into practical layers that you can keep, merge, or reorganize for your own projects:
-
-* **Theme** – Presentation (templates, patterns, styles)
-* **Blocks** – Custom blocks and block assets
-* **Core** – Site functionality (CPT, meta, integrations, logic)
-* **Editor** – Optional editor behavior
-
----
-
-## Project Structure
-
-```
-cel-theme/     → FSE Theme (presentation layer)
-cel-core/      → Core plugin (PHP modules + block/editor assets)
+```text
+wp-content/
+  themes/
+    celestial/          FSE theme
+  plugins/
+    celestial-core/     Core plugin, blocks, editor assets
 ```
 
----
-
-# Development Environment
-
-This project uses `wp-env` for local development.
+The theme has no Node or Composer setup. Plugin PHP is loaded with explicit includes. Block and editor asset tooling lives inside the core plugin.
 
 ## Requirements
 
-* Docker installed and running
-* Node.js installed
-* Composer installed
+- Docker
+- Node.js `^24.0.0`
+- Global `wp-env`
 
----
+Install `wp-env` globally if needed:
 
-# Setup Instructions
-
-## 1. Start WordPress environment
-
-```
-wp-env start
+```bash
+npm install -g @wordpress/env
 ```
 
-WordPress will be available at:
-
-* URL: [http://localhost:8888](http://localhost:8888)
-* Username: admin
-* Password: password
-
----
-
-## 2. Install Core Plugin dependencies
-
-```
-composer install
-```
-
----
-
-## 3. Build blocks and editor assets
+## Setup
 
 From the repository root:
 
+```bash
+wp-env start
 ```
+
+WordPress runs at `http://localhost:8888`.
+
+Admin credentials:
+
+```text
+admin / password
+```
+
+Install and run plugin asset tooling from the plugin directory:
+
+```bash
+cd wp-content/plugins/celestial-core
 npm install
-npm run start
+npm run build
 ```
 
-This will:
+Use `npm run start` instead of `npm run build` while developing blocks or editor assets.
 
-* Compile block and editor assets from `cel-core`
-* Watch for changes
-* Automatically rebuild on updates
+## Notes
 
----
-
-# Notes
-
-* The current build pipeline expects blocks in `cel-core/blocks` and editor assets in `cel-core/editor`.
-* If you prefer separate plugins (e.g., `cel-blocks`, `cel-editor`), you can split them and adjust scripts and `wp-env` config to match.
-
----
-
-# Changelog
-
-See `CHANGELOG.md` for release notes.
+- Generated assets are emitted to `wp-content/plugins/celestial-core/build/`.
+- The plugin skips block registration when build assets do not exist yet.
+- Optional project methodology lives in `docs/README.md`.

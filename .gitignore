@@ -1,7 +1,6 @@
 .idea
 .DS_Store
 *.log
-/vendor/
 /node_modules/
-/cel-core/build/
-/cel-core/vendor/
+/wp-content/plugins/celestial-core/build/
+/wp-content/plugins/celestial-core/node_modules/

@@ -8,6 +8,8 @@
  *     $block (WP_Block): The block instance.
  *
  * @see https://github.com/WordPress/gutenberg/blob/trunk/docs/reference-guides/block-api/block-metadata.md#render
+ *
+ * @package Celestial
  */
 
 // Generates a unique id for aria-controls.
@@ -20,7 +22,7 @@ wp_interactivity_state(
 		'isDark'    => false,
 		'darkText'  => esc_html__( 'Switch to Light', 'celestial' ),
 		'lightText' => esc_html__( 'Switch to Dark', 'celestial' ),
-		'themeText'	=> esc_html__( 'Switch to Dark', 'celestial' ),
+		'themeText' => esc_html__( 'Switch to Dark', 'celestial' ),
 	)
 );
 ?>
