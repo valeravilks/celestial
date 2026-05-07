@@ -1,9 +1,5 @@
 {
 	"settings": {
-		"position": {
-			"sticky": true
-		},
-		"appearanceTools": false,
 		"blocks": {
 			"core/heading": {
 				"typography": {
