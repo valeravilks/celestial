@@ -73,28 +73,33 @@
 				},
 				{
 					"color": "#242628",
-					"name": "Black",
-					"slug": "black"
+					"name": "Base",
+					"slug": "base"
 				},
 				{
 					"color": "#FFFFFF",
-					"name": "White",
-					"slug": "white"
+					"name": "Contrast",
+					"slug": "contrast"
 				},
 				{
 					"color": "#868E96",
-					"name": "Gray",
-					"slug": "gray"
+					"name": "Muted",
+					"slug": "muted"
 				},
 				{
 					"color": "#F8F9FA",
-					"name": "Gray Light",
-					"slug": "gray-light"
+					"name": "Surface",
+					"slug": "surface"
 				},
 				{
-					"color": "#343A40",
-					"name": "Gray Dark",
-					"slug": "gray-dark"
+					"color": "#F1F3F5",
+					"name": "Surface Alt",
+					"slug": "surface-alt"
+				},
+				{
+					"color": "#DEE2E6",
+					"name": "Border",
+					"slug": "border"
 				}
 			],
 			"text": false
