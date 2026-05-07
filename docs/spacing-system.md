@@ -48,6 +48,18 @@ Use the scale by role:
 90     Rare extra-large page or hero spacing.
 ```
 
+## Global Spacing Defaults
+
+Global spacing defaults live under `styles.spacing` in `theme.json`.
+
+`blockGap` defines the default gap between blocks when a block layout uses the global rhythm. A friendly starter default is usually:
+
+```text
+styles.spacing.blockGap  var(--wp--preset--spacing--40)
+```
+
+Use local `blockGap` values in templates and patterns when a layout needs tighter or larger spacing. Use `blockGap: 0` only when the pattern intentionally controls every internal space itself.
+
 ## Rules
 
 - Prefer `theme.json` spacing presets for templates, patterns, block styles, and custom blocks.

@@ -24,11 +24,13 @@ Use `alignfull` for full-width sections: full-bleed backgrounds, covers, hero se
 The root page padding is set in global styles:
 
 ```text
-left   var(--wp--preset--spacing--40)
-right  var(--wp--preset--spacing--40)
+styles.spacing.padding.left   var(--wp--preset--spacing--40)
+styles.spacing.padding.right  var(--wp--preset--spacing--40)
 ```
 
 This gives the page a consistent side gutter so content does not touch the viewport edge on smaller screens.
+
+Root top and bottom padding should usually stay at `0px`. Vertical rhythm belongs to sections, blocks, and patterns rather than the root page frame.
 
 ## Root Padding Aware Alignments
 
