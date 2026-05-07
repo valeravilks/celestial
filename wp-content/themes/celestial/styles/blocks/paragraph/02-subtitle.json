@@ -6,7 +6,7 @@
   "blockTypes": ["core/paragraph"],
   "styles": {
     "typography": {
-      "fontSize": "var(--wp--preset--font-size--medium)"
+      "fontSize": "var(--wp--preset--font-size--md)"
     }
   }
 }

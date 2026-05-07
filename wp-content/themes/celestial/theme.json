@@ -108,44 +108,49 @@
 			"defaultSpacingSizes": false,
 			"spacingSizes": [
 				{
-					"name": "XS",
+					"name": "10",
+					"size": "0.25rem",
+					"slug": "10"
+				},
+				{
+					"name": "20",
 					"size": "0.5rem",
-					"slug": "1"
+					"slug": "20"
 				},
 				{
-					"name": "SM",
+					"name": "30",
+					"size": "0.75rem",
+					"slug": "30"
+				},
+				{
+					"name": "40",
 					"size": "1rem",
-					"slug": "2"
+					"slug": "40"
 				},
 				{
-					"name": "MD",
+					"name": "50",
 					"size": "1.5rem",
-					"slug": "3"
+					"slug": "50"
 				},
 				{
-					"name": "LG",
-					"size": "clamp(2rem, 4vw, 3rem)",
-					"slug": "4"
+					"name": "60",
+					"size": "2rem",
+					"slug": "60"
 				},
 				{
-					"name": "XL",
+					"name": "70",
 					"size": "clamp(2.5rem, 5vw, 4rem)",
-					"slug": "5"
+					"slug": "70"
 				},
 				{
-					"name": "2XL",
-					"size": "clamp(3rem, 6vw, 6rem)",
-					"slug": "6"
+					"name": "80",
+					"size": "clamp(4rem, 8vw, 6rem)",
+					"slug": "80"
 				},
 				{
-					"name": "3XL",
-					"size": "clamp(4rem, 8vw, 8rem)",
-					"slug": "7"
-				},
-				{
-					"name": "4XL",
-					"size": "clamp(6rem, 10vw, 12rem)",
-					"slug": "8"
+					"name": "90",
+					"size": "clamp(6rem, 10vw, 8rem)",
+					"slug": "90"
 				}
 			]
 		},
@@ -182,39 +187,60 @@
 			"fontSizes": [
 				{
 					"fluid": false,
-					"name": "Small",
+					"name": "XS",
+					"size": "0.75rem",
+					"slug": "xs"
+				},
+				{
+					"fluid": false,
+					"name": "SM",
 					"size": "0.875rem",
-					"slug": "small"
+					"slug": "sm"
 				},
 				{
 					"fluid": false,
-					"name": "Medium",
+					"name": "Base",
 					"size": "1rem",
-					"slug": "medium"
+					"slug": "base"
 				},
 				{
 					"fluid": false,
-					"name": "Large",
+					"name": "MD",
+					"size": "1.125rem",
+					"slug": "md"
+				},
+				{
+					"fluid": false,
+					"name": "LG",
 					"size": "1.25rem",
-					"slug": "large"
+					"slug": "lg"
 				},
 				{
 					"fluid": {
 						"max": "2rem",
 						"min": "1.5rem"
 					},
-					"name": "Extra Large",
+					"name": "XL",
 					"size": "1.75rem",
-					"slug": "x-large"
+					"slug": "xl"
 				},
 				{
 					"fluid": {
 						"max": "3rem",
 						"min": "2rem"
 					},
-					"name": "Extra Extra Large",
+					"name": "2XL",
 					"size": "2.25rem",
-					"slug": "xx-large"
+					"slug": "2xl"
+				},
+				{
+					"fluid": {
+						"max": "4.5rem",
+						"min": "2.75rem"
+					},
+					"name": "3XL",
+					"size": "3.5rem",
+					"slug": "3xl"
 				}
 			],
 			"fontStyle": false,
@@ -230,32 +256,32 @@
 		"elements": {
 			"h1": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--xx-large)"
+					"fontSize": "var(--wp--preset--font-size--3xl)"
 				}
 			},
 			"h2": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--x-large)"
+					"fontSize": "var(--wp--preset--font-size--2xl)"
 				}
 			},
 			"h3": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--large)"
+					"fontSize": "var(--wp--preset--font-size--xl)"
 				}
 			},
 			"h4": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--medium)"
+					"fontSize": "var(--wp--preset--font-size--lg)"
 				}
 			},
 			"h5": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)"
+					"fontSize": "var(--wp--preset--font-size--md)"
 				}
 			},
 			"h6": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)",
+					"fontSize": "var(--wp--preset--font-size--sm)",
 					"letterSpacing": "0.08em",
 					"textTransform": "uppercase"
 				}
@@ -278,7 +304,7 @@
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--roboto)",
-			"fontSize": "var(--wp--preset--font-size--medium)",
+			"fontSize": "var(--wp--preset--font-size--base)",
 			"lineHeight": "1.6"
 		},
 		"blocks": {
