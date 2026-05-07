@@ -28,6 +28,16 @@ includes/
 - Prefer WordPress-native tools: FSE templates, `theme.json`, block metadata, and `@wordpress/scripts`.
 - Keep editor freedom constrained through presets and patterns rather than one-off values.
 - Use theme tokens and WordPress presets before adding ad hoc CSS.
+- Add extra styles for core blocks through `wp_enqueue_block_style()` in `wp-content/themes/celestial/functions.php`.
+- Core block styles live in `wp-content/themes/celestial/assets/blocks/<block-name>.css`, using the block name without the `core/` prefix.
+- When adding one, add the block name to `$styled_blocks` in `celestial_theme_register_block_styles()`.
+
+Example:
+
+```text
+assets/blocks/button.css  -> core/button
+assets/blocks/image.css   -> core/image
+```
 
 ## Examples
 
