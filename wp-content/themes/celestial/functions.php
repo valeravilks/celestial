@@ -10,21 +10,41 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Removes core patterns and registers theme pattern categories.
+ * Disables block patterns registered by WordPress Core.
  *
  * @return void
  */
-function celestial_theme_register_patterns(): void {
+function celestial_disable_core_patterns(): void {
 	remove_theme_support( 'core-block-patterns' );
-
-	register_block_pattern_category(
-		'page',
-		array(
-			'label' => __( 'Pages', 'celestial-fse-theme' ),
-		)
-	);
 }
-add_action( 'init', 'celestial_theme_register_patterns' );
+
+add_action( 'after_setup_theme', 'celestial_disable_core_patterns' );
+
+/**
+ * Unregisters the default Query Loop patterns.
+ *
+ * @return void
+ */
+function celestial_unregister_core_query_patterns(): void {
+	if ( ! function_exists( 'unregister_block_pattern' ) ) {
+		return;
+	}
+
+	$patterns = [
+		'core/query-standard-posts',
+		'core/query-medium-posts',
+		'core/query-small-posts',
+		'core/query-grid-posts',
+		'core/query-large-title-posts',
+		'core/query-offset-posts',
+	];
+
+	foreach ( $patterns as $pattern ) {
+		unregister_block_pattern( $pattern );
+	}
+}
+
+add_action( 'init', 'celestial_unregister_core_query_patterns', 999 );
 
 /**
  * Registers block-specific theme stylesheets.
