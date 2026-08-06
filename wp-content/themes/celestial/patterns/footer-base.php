@@ -2,7 +2,7 @@
 /**
  * Title: Footer Base
  * Slug: celestial-fse-theme/footer-base
- * Categories: Footers
+ * Categories: footer
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
