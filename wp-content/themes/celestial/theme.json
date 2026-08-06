@@ -76,6 +76,9 @@
 			"contentSize": "1200px",
 			"wideSize": "1600px"
 		},
+		"dimensions": {
+			"minHeight": true
+		},
 		"spacing": {
 			"blockGap": true,
 			"padding": true,
