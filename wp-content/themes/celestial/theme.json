@@ -12,34 +12,6 @@
 					"fontFamilies": [],
 					"fontSizes": []
 				}
-			},
-			"core/button": {
-				"typography": {
-					"fontFamilies": [],
-					"fontSizes": []
-				},
-				"border": {
-					"radius": false
-				}
-			},
-			"core/buttons": {
-				"typography": {
-					"fontFamilies": [],
-					"fontSizes": []
-				}
-			},
-			"core/group": {
-				"typography": {
-					"fontFamilies": [],
-					"fontSizes": []
-				},
-				"color": {
-					"background": false,
-					"text": false
-				},
-				"spacing": {
-					"padding": true
-				}
 			}
 		},
 		"color": {
@@ -105,7 +77,8 @@
 			"wideSize": "1600px"
 		},
 		"spacing": {
-			"customSpacingSize": false,
+			"blockGap": true,
+			"padding": true,
 			"defaultSpacingSizes": false,
 			"spacingSizes": [
 				{
@@ -257,12 +230,12 @@
 		"elements": {
 			"h1": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--3xl)"
+					"fontSize": "var(--wp--preset--font-size--3-xl)"
 				}
 			},
 			"h2": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--2xl)"
+					"fontSize": "var(--wp--preset--font-size--2-xl)"
 				}
 			},
 			"h3": {
@@ -319,13 +292,13 @@
 	"templateParts": [
 		{
 			"area": "header",
-			"name": "simple-header",
-			"title": "Simple Header"
+			"name": "header",
+			"title": "Header"
 		},
 		{
 			"area": "footer",
-			"name": "simple-footer",
-			"title": "Simple Footer"
+			"name": "footer",
+			"title": "Footer"
 		},
 		{
 			"area": "uncategorized",

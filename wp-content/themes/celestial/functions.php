@@ -21,38 +21,12 @@ function celestial_disable_core_patterns(): void {
 add_action( 'after_setup_theme', 'celestial_disable_core_patterns' );
 
 /**
- * Unregisters the default Query Loop patterns.
- *
- * @return void
- */
-function celestial_unregister_core_query_patterns(): void {
-	if ( ! function_exists( 'unregister_block_pattern' ) ) {
-		return;
-	}
-
-	$patterns = [
-		'core/query-standard-posts',
-		'core/query-medium-posts',
-		'core/query-small-posts',
-		'core/query-grid-posts',
-		'core/query-large-title-posts',
-		'core/query-offset-posts',
-	];
-
-	foreach ( $patterns as $pattern ) {
-		unregister_block_pattern( $pattern );
-	}
-}
-
-add_action( 'init', 'celestial_unregister_core_query_patterns', 999 );
-
-/**
  * Registers block-specific theme stylesheets.
  *
  * @return void
  */
 function celestial_theme_register_block_styles(): void {
-	$styled_blocks = array( 'image', 'button' );
+	$styled_blocks = array( 'button' );
 
 	foreach ( $styled_blocks as $block_name ) {
 		$path = "assets/blocks/{$block_name}.css";
