@@ -9,12 +9,8 @@
 			"text": "var:preset|color|base",
 			"background": "inherit"
 		},
-		"typography": {
-			"textDecoration": "underline"
-		},
 		"border": {
 			"width": "0"
 		},
-		"css": "&:hover { text-decoration: none; }"
-	}
+		"css": "&::after { content: '→'; display: inline-block; margin-left: 0.4em; transition: transform 160ms ease; } &:hover::after { transform: translateX(4px); }"	}
 }
