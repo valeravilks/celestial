@@ -260,7 +260,8 @@
 	},
 	"styles": {
 		"color": {
-			"text": "var:preset|color|base"
+			"text": "var:preset|color|base",
+			"background": "var:preset|color|contrast"
 		},
 		"elements": {
 			"h1": {
@@ -353,7 +354,8 @@
 				"variations": {
 					"outline": {
 						"color": {
-							"text": "var:preset|color|base"
+							"text": "var:preset|color|base",
+							"background": "var:preset|color|contrast"
 						},
 						"border": {
 							"color": "var:preset|color|muted",

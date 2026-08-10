@@ -9,8 +9,12 @@
 			"text": "var:preset|color|base",
 			"background": "inherit"
 		},
+		"typography": {
+			"textDecoration": "underline"
+		},
 		"border": {
 			"width": "0"
-		}
+		},
+		"css": "&:hover { text-decoration: none; }"
 	}
 }
