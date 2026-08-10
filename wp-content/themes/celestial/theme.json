@@ -54,7 +54,7 @@
 			"link": false,
 			"palette": [
 				{
-					"color": "#009F73",
+					"color": "#007A58",
 					"name": "Primary",
 					"slug": "primary"
 				},
@@ -332,10 +332,7 @@
 					"background": "var:preset|color|primary"
 				},
 				"border": {
-					"radius": "5px",
-					"width": "2px",
-					"color": "var:preset|color|primary",
-					"style": "solid"
+					"radius": "5px"
 				},
 				"spacing": {
 					"padding": {
@@ -346,16 +343,33 @@
 					}
 				},
 				":hover": {
-
+					"color": {
+						"background": "color-mix(in srgb, var(--wp--preset--color--primary) 88%, white)"
+					},
+					"border": {
+						"color": "color-mix(in srgb, var(--wp--preset--color--primary) 88%, white)"
+					}
 				},
 				"variations": {
 					"outline": {
+						"color": {
+							"text": "var:preset|color|base"
+						},
+						"border": {
+							"color": "var:preset|color|muted",
+							"width": "1px"
+						},
 						"spacing": {
 							"padding": {
-								"top": "var:preset|spacing|20",
-								"right": "var:preset|spacing|40",
-								"bottom": "var:preset|spacing|20",
-								"left": "var:preset|spacing|40"
+								"top": "calc(var(--wp--preset--spacing--20) - 1px)",
+								"right": "calc(var(--wp--preset--spacing--40) - 1px)",
+								"bottom": "calc(var(--wp--preset--spacing--20) - 1px)",
+								"left": "calc(var(--wp--preset--spacing--40) - 1px)"
+							}
+						},
+						":hover": {
+							"color": {
+								"background": "var:preset|color|surface"
 							}
 						}
 					}
