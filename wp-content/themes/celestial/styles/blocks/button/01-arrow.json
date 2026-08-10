@@ -1,12 +1,16 @@
 {
-  "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "version": 3,
-  "blockTypes": ["core/button"],
-  "slug": "button-arrow",
-  "title": "Arrow",
-  "styles": {
-    "color": {
-      "text": "var:preset|color|accent"
-    }
-  }
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"blockTypes": ["core/button"],
+	"slug": "button-link",
+	"title": "Link",
+	"styles": {
+		"color": {
+			"text": "var:preset|color|base",
+			"background": "inherit"
+		},
+		"border": {
+			"width": "0"
+		}
+	}
 }
