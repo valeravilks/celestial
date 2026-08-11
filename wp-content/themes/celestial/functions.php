@@ -10,6 +10,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
+ * Loads the theme translations.
+ *
+ * Translation files belong in the theme's languages directory.
+ *
+ * @return void
+ */
+function celestial_theme_load_textdomain(): void {
+	load_theme_textdomain( 'celestial-fse-theme', get_template_directory() . '/languages' );
+}
+
+add_action( 'after_setup_theme', 'celestial_theme_load_textdomain' );
+
+/**
  * Disables block patterns registered by WordPress Core.
  *
  * @return void

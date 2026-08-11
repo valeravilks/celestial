@@ -3,6 +3,7 @@
  * Title: Hero Header Image
  * Slug: celestial-fse-theme/hero-header-image
  * Categories: banner
+ * Text Domain: celestial-fse-theme
  */
 
 $image = get_theme_file_uri('assets/images/bg.jpg');
@@ -11,22 +12,22 @@ $image = get_theme_file_uri('assets/images/bg.jpg');
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:columns {"style":{"spacing":{"padding":{"top":"var:preset|spacing|0","bottom":"var:preset|spacing|0"}}}} -->
 <div class="wp-block-columns" style="padding-top:var(--wp--preset--spacing--0);padding-bottom:var(--wp--preset--spacing--0)"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":1} -->
-<h1 class="wp-block-heading">Ideas Made Real</h1>
+<h1 class="wp-block-heading"><?php esc_html_e( 'Ideas Made Real', 'celestial-fse-theme' ); ?></h1>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} -->
 <div class="wp-block-column"><!-- wp:paragraph -->
-<p>We turn ambitious ideas into thoughtful, meaningful experiences that connect with people and create lasting value. From the first concept to the final result, we bring clarity, creativity, and purpose to every step.</p>
+<p><?php esc_html_e( 'We turn ambitious ideas into thoughtful, meaningful experiences that connect with people and create lasting value. From the first concept to the final result, we bring clarity, creativity, and purpose to every step.', 'celestial-fse-theme' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|40"}}}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Get Started</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started', 'celestial-fse-theme' ); ?></a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button">Learn More</a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Learn More', 'celestial-fse-theme' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>

@@ -1,0 +1,28 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Celestial FSE Theme 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: celestial-fse-theme\n"
+
+#: patterns/hero-header-image.php
+msgid "Hero Header Image"
+msgstr ""
+
+#: patterns/hero-header-image.php
+msgid "Ideas Made Real"
+msgstr ""
+
+#: patterns/hero-header-image.php
+msgid "We turn ambitious ideas into thoughtful, meaningful experiences that connect with people and create lasting value. From the first concept to the final result, we bring clarity, creativity, and purpose to every step."
+msgstr ""
+
+#: patterns/hero-header-image.php
+msgid "Get Started"
+msgstr ""
+
+#: patterns/hero-header-image.php
+msgid "Learn More"
+msgstr ""
