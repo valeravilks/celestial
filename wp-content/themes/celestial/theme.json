@@ -381,6 +381,26 @@
 				"spacing": {
 					"blockGap": "var:preset|spacing|40"
 				}
+			},
+			"core/navigation": {
+				"spacing": {
+					"blockGap": "var:preset|spacing|40"
+				},
+				"elements": {
+					"link": {
+						":hover": {
+							"typography": {
+								"textDecoration": "underline"
+							}
+						}
+					}
+				}
+			},
+			"core/site-title": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--lg)",
+					"textTransform": "uppercase"
+				}
 			}
 		}
 	},
