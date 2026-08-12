@@ -2,9 +2,9 @@
 /**
  * Title: Content Left Image
  * Slug: celestial-fse-theme/content-left-image
- * Categories: feature
+ * Categories:
  */
-$image = get_theme_file_path("assets/images/git-logo.jpg");
+$image = get_theme_file_uri("assets/images/git-logo.png");
 ?>
 <!-- wp:group {"metadata":{"categories":["media"],"patternName":"celestial-fse-theme/content-left","name":"Content Left"},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|40"},"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}}} -->
