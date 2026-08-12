@@ -2,7 +2,7 @@
 /**
  * Title: Content Left Image
  * Slug: celestial-fse-theme/content-left-image
- * Categories:
+ * Categories: content
  */
 $image = get_theme_file_uri("assets/images/git-logo.png");
 ?>

@@ -55,3 +55,13 @@ function celestial_theme_register_block_styles(): void {
 	}
 }
 add_action( 'init', 'celestial_theme_register_block_styles' );
+
+function celestial_register_my_pattern_categories(): void
+{
+	register_block_pattern_category(
+		'content',
+		array( 'label' => __( 'Content', 'my-plugin' ) )
+	);
+}
+
+add_action( 'init', 'celestial_register_my_pattern_categories' );
