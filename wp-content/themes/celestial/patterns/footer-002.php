@@ -2,7 +2,7 @@
 /**
  * Title: Footer 002
  * Slug: celestial/footer-002
- * Categories: Footers
+ * Categories: footer
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|0","bottom":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|50"}},"layout":{"type":"constrained"}} -->
