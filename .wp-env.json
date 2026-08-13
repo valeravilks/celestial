@@ -1,6 +1,6 @@
 {
 	"core": "WordPress/WordPress#7.0",
-	"plugins": [ "./wp-content/plugins/celestial-core" ],
+	"plugins": [ "./wp-content/plugins/celestial" ],
 	"themes": [ "./wp-content/themes/celestial" ],
 	"testsEnvironment": false
 }

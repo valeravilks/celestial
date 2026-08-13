@@ -1,5 +1,5 @@
 {
-	"name": "celestial-core",
+	"name": "celestial",
 	"version": "1.0.0",
 	"description": "Block and editor asset tooling for the Celestial WordPress plugin.",
 	"engines": {
