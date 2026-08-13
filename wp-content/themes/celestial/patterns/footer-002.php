@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Footer Base Line
- * Slug: celestial/footer-base-line
+ * Title: Footer 002
+ * Slug: celestial/footer-002
  * Categories: Footers
  */
 ?>
