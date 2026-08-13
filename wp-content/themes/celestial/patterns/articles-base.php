@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Articles Base
- * Slug: celestial-fse-theme/articles-base
+ * Slug: celestial/articles-base
  * Categories: Posts
  */
 ?>

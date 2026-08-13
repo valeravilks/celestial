@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Content Left
- * Slug: celestial-fse-theme/content-left
+ * Slug: celestial/content-left
  * Categories: media
  */
 ?>

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Header Base Logo
- * Slug: celestial-fse-theme/header-base-logo
+ * Slug: celestial/header-base-logo
  * Categories: header
  */
 ?>

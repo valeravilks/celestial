@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Hero Header Image Center
- * Slug: celestial-fse-theme/hero-header-image-center
+ * Slug: celestial/hero-header-image-center
  * Categories: banner
  */
 ?>

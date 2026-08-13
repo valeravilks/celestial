@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @return void
  */
 function celestial_theme_load_textdomain(): void {
-	load_theme_textdomain( 'celestial-fse-theme', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'celestial', get_template_directory() . '/languages' );
 }
 
 add_action( 'after_setup_theme', 'celestial_theme_load_textdomain' );

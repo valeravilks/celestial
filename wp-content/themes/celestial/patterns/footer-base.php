@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Footer Base
- * Slug: celestial-fse-theme/footer-base
+ * Slug: celestial/footer-base
  * Categories: footer
  */
 ?>
