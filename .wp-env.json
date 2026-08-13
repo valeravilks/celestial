@@ -2,5 +2,8 @@
 	"core": "WordPress/WordPress#7.0",
 	"plugins": [ "./wp-content/plugins/celestial" ],
 	"themes": [ "./wp-content/themes/celestial" ],
+	"lifecycleScripts": {
+		"afterStart": "wp-env run cli wp theme activate celestial"
+	},
 	"testsEnvironment": false
 }
