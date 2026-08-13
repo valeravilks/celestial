@@ -3,32 +3,33 @@
  * Title: Content Left Image
  * Slug: celestial-fse-theme/content-left-image
  * Categories: content
+ * Text Domain: celestial-fse-theme
  */
+
+$image = get_theme_file_uri( 'assets/images/git-logo.png' );
 ?>
-<!-- wp:cover {"overlayColor":"surface-alt","isUserOverlayColor":true,"minHeight":50,"isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|0","bottom":"var:preset|spacing|0","left":"var:preset|spacing|0","right":"var:preset|spacing|0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignfull is-light" style="padding-top:var(--wp--preset--spacing--0);padding-right:var(--wp--preset--spacing--0);padding-bottom:var(--wp--preset--spacing--0);padding-left:var(--wp--preset--spacing--0);min-height:50px"><span aria-hidden="true" class="wp-block-cover__background has-surface-alt-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|40"},"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}}} -->
-		<div class="wp-block-columns are-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:column {"verticalAlignment":"center","style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} -->
-			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"layout":{"type":"constrained"}} -->
-				<div class="wp-block-group"><!-- wp:paragraph {"className":"is-style-paragraph-subtitle"} -->
-					<p class="is-style-paragraph-subtitle">Git-first workflow</p>
-					<!-- /wp:paragraph -->
+<!-- wp:group {"align":"full","backgroundColor":"surface-alt","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-surface-alt-background-color has-background" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|70"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"66.66%","style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"is-style-paragraph-subtitle"} -->
+<p class="is-style-paragraph-subtitle"><?php esc_html_e( 'Git-first workflow', 'celestial-fse-theme' ); ?></p>
+<!-- /wp:paragraph -->
 
-					<!-- wp:heading -->
-					<h2 class="wp-block-heading">A WordPress Starter Built for Git Workflows</h2>
-					<!-- /wp:heading --></div>
-				<!-- /wp:group -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><?php esc_html_e( 'A WordPress Starter Built for Git Workflows', 'celestial-fse-theme' ); ?></h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
 
-				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained"}} -->
-				<div class="wp-block-group"><!-- wp:paragraph -->
-					<p>Celestial lives in a familiar WordPress project structure, ready to clone, version, and adapt with Git. Develop locally, track every change, and deploy the same codebase with confidence.</p>
-					<!-- /wp:paragraph --></div>
-				<!-- /wp:group --></div>
-			<!-- /wp:column -->
+<!-- wp:paragraph -->
+<p><?php esc_html_e( 'Celestial lives in a familiar WordPress project structure, ready to clone, version, and adapt with Git. Develop locally, track every change, and deploy the same codebase with confidence.', 'celestial-fse-theme' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
 
-			<!-- wp:column {"verticalAlignment":"center"} -->
-			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-				<figure class="wp-block-image size-full"><img src="http://localhost:8888/wp-content/themes/celestial/assets/images/git-logo.png" alt="Git Logo"/></figure>
-				<!-- /wp:image --></div>
-			<!-- /wp:column --></div>
-		<!-- /wp:columns --></div></div>
-<!-- /wp:cover -->
+<!-- wp:column {"verticalAlignment":"center","width":"33.33%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%"><!-- wp:image {"width":"360px","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo esc_url( $image ); ?>" alt="<?php esc_attr_e( 'Git', 'celestial-fse-theme' ); ?>" style="width:360px"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->

@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Celestial Core Plugin
- * Description: This plugin contains all the core functionality required for the starter kit to work properly
+ * Plugin Name: Celestial
+ * Description: Provides the project functionality, custom blocks, and editor features used by the Celestial starter kit.
  * Version: 1.0.0
  *
  * @package Celestial

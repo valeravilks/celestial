@@ -9,10 +9,10 @@ wp-content/
   themes/
     celestial/          FSE theme
   plugins/
-    celestial-core/     Core plugin, blocks, editor assets
+    celestial-core/     Celestial plugin, blocks, editor assets
 ```
 
-The theme has no Node or Composer setup. Plugin PHP is loaded with explicit includes. Block and editor asset tooling lives inside the core plugin.
+The theme has no Node or Composer setup. Plugin PHP is loaded with explicit includes. Block and editor asset tooling lives inside the Celestial plugin.
 
 ## Requirements
 
@@ -42,7 +42,7 @@ Admin credentials:
 admin / password
 ```
 
-Install and run plugin asset tooling from the plugin directory:
+Install and run Celestial plugin asset tooling from the plugin directory:
 
 ```bash
 cd wp-content/plugins/celestial-core
