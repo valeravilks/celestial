@@ -2,7 +2,7 @@
 /**
  * Title: Hero 003
  * Slug: celestial/hero-003
- * Categories: hero
+ * Categories: banner
  */
 $img_bg = get_theme_file_uri('assets/images/bg-2.jpeg');
 $logo = get_theme_file_uri('assets/images/celestial-logo-light.svg');
