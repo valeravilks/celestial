@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Hero Header Image Center
- * Slug: celestial/hero-header-image-center
+ * Title: Hero 002
+ * Slug: celestial/hero-002
  * Categories: banner
  */
 ?>

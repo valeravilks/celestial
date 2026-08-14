@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Hero Header Image
- * Slug: celestial/hero-header-image
+ * Title: Hero 001
+ * Slug: celestial/hero-001
  * Categories: banner
  * Text Domain: celestial
  */
@@ -12,13 +12,13 @@ $image = get_theme_file_uri('assets/images/bg.jpg');
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:columns {"style":{"spacing":{"padding":{"top":"var:preset|spacing|0","bottom":"var:preset|spacing|0"}}}} -->
 <div class="wp-block-columns" style="padding-top:var(--wp--preset--spacing--0);padding-bottom:var(--wp--preset--spacing--0)"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:heading {"level":1} -->
-<h1 class="wp-block-heading"><?php esc_html_e( 'Ideas Made Real', 'celestial' ); ?></h1>
+<h1 class="wp-block-heading"><?php esc_html_e( 'Celestial', 'celestial' ); ?></h1>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} -->
 <div class="wp-block-column"><!-- wp:paragraph -->
-<p><?php esc_html_e( 'We turn ambitious ideas into thoughtful, meaningful experiences that connect with people and create lasting value. From the first concept to the final result, we bring clarity, creativity, and purpose to every step.', 'celestial' ); ?></p>
+<p><?php esc_html_e( 'Celestial combines a lightweight block theme, reusable patterns, design tokens, and a structured core plugin—giving you a clean starting point without locking the project into a heavy framework.', 'celestial' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|40"}}}} -->
